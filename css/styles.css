@@ -1,7 +1,11 @@
 body {
     margin: auto;
 }
-
+@media screen and (max-width: 760px) {
+    #name{
+        width: 70%;
+    }
+}
 .jarallax {
     height: inherit;
     display: flex;
