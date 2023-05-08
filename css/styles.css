@@ -42,8 +42,21 @@ body {
     height: 800;
     background-color: black;
 }
-#about div{
-    opacity: 70%;
+.border{
+    position:absolute;
+    z-index: 10;
+    display:flex;
+    justify-content: center;
+}
+.border-text{
+    color:white;
+    font-size: 60px;
+    transform: translate(0px, -38px);
+    margin: auto;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family: "lobster", cursive;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 #clients {
     height: 1000px;
