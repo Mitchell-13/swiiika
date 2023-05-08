@@ -1,0 +1,63 @@
+body {
+    margin: auto;
+}
+
+.jarallax {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.stacked-text {
+    z-index: 9;
+}
+#name{
+    justify-self: center;;
+    align-self: center;
+    opacity:unset; 
+
+}
+#logo {
+    height: 1000px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.border {
+    background-color: black;
+    height: 10px;
+    width: 100%;
+    overflow: visible;
+}
+.title {
+    color:white;
+    border: 2px solid white;
+    width: fit-content;
+    height: fit-content;
+    z-index: 20;
+}
+
+#about {
+    position: relative;
+    height: 800;
+    background-color: black;
+}
+#about div{
+    opacity: 70%;
+}
+#clients {
+    height: 1000px;
+    background-color: black;
+}
+#clients div{
+    opacity: 70%;
+}
+#portfolio {
+    height: 1000px;
+    background-color: yellow;
+}
+
+#contact {
+    height: 1000px;
+    background-color: blue;
+}
