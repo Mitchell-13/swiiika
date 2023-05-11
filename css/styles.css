@@ -25,6 +25,19 @@ body {
         font-family: "lobster", cursive;
         text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
+    #socials{
+        flex-wrap: wrap;
+    }
+    #clients-buttons{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    #clients-buttons div{
+        text-align: center;
+    }
+    #clients-buttons span{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 760px) {
