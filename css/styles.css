@@ -1,8 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
 
     --def: #363b3d;
     --inv: #fff;
     margin: auto;
+    
 }
 
 @media screen and (max-width: 760px) {
@@ -40,32 +45,39 @@ body {
     display: flex;
     justify-content: center;
 }
-#first{
+
+#first {
     flex-direction: column;
     justify-content: center;
     align-content: center;
     display: flex;
 }
+
 #name {
     justify-self: center;
     align-self: center;
     display: flex;
+    scroll-margin-top: 100px;
 }
-#socials{
+
+#socials {
     justify-content: center;
     display: flex;
 }
-.fa-brands{
-    color:rgb(219, 219, 219);
+
+.fa-brands {
+    color: rgb(219, 219, 219);
     font-size: 40px;
-    margin:40px;
+    margin: 40px;
     margin-top: 20px;
     transition-duration: 0.3s;
 }
-.fa-brands:hover{
-    color:rgb(255, 255, 255);
-    transform:scale(1.2);
+
+.fa-brands:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
 }
+
 #logo {
     height: 1000px;
     background-color: black;
@@ -91,6 +103,7 @@ body {
     position: relative;
     height: 800;
     background-color: black;
+    scroll-margin-top: 100px;
 }
 
 .border {
@@ -103,10 +116,13 @@ body {
 #clients {
     height: 1000px;
     background-color: black;
+    scroll-margin-top: 100px;
 }
-#VideoWorker-2{
+
+#VideoWorker-2 {
     opacity: 50%;
 }
+
 #clients.jarallax {
     flex-direction: column;
 }
@@ -118,9 +134,10 @@ body {
     transform: translate(0px, 70px);
     color: rgb(126, 126, 126);
     font-weight: bolder;
-    display:flex;
+    display: flex;
 }
-#clients-buttons div{
+
+#clients-buttons div {
     height: fit-content;
 }
 
@@ -136,11 +153,13 @@ body {
 #portfolio {
     height: 1000px;
     background-color: yellow;
+    scroll-margin-top: 100px;
 }
 
 #contact {
     height: 1000px;
     background-color: blue;
+    scroll-margin-top: 100px;
 }
 
 
