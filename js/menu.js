@@ -9,7 +9,7 @@ function menuOnClick() {
     var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     var business = document.getElementById('businesses');
     var influencer = document.getElementById('influencers')
-    if (windowWidth < 760) {
+    if (windowWidth <= 760) {
       business.classList.remove('from-left', 'btn');
       influencer.classList.remove('from-right', 'btn');
     } else {
