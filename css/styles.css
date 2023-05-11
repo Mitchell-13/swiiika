@@ -1,4 +1,7 @@
 body {
+
+    --def: #363b3d;
+    --inv: #fff;
     margin: auto;
 }
 
@@ -37,11 +40,32 @@ body {
     display: flex;
     justify-content: center;
 }
+#first{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
 #name {
     justify-self: center;
     align-self: center;
+    display: flex;
 }
-
+#socials{
+    justify-content: center;
+    display: flex;
+}
+.fa-brands{
+    color:rgb(219, 219, 219);
+    font-size: 40px;
+    margin:40px;
+    margin-top: 20px;
+    transition-duration: 0.3s;
+}
+.fa-brands:hover{
+    color:rgb(255, 255, 255);
+    transform:scale(1.2);
+}
 #logo {
     height: 1000px;
     background-color: black;
@@ -80,41 +104,35 @@ body {
     height: 1000px;
     background-color: black;
 }
-
+#VideoWorker-2{
+    opacity: 50%;
+}
 #clients.jarallax {
     flex-direction: column;
 }
 
 #clients-buttons {
+    position: relative;
     justify-self: center;
     font-size: 40px;
-    color: white;
     transform: translate(0px, 70px);
-    color:rgb(126, 126, 126);
-    font-weight:bolder;
+    color: rgb(126, 126, 126);
+    font-weight: bolder;
+    display:flex;
+}
+#clients-buttons div{
+    height: fit-content;
 }
 
-#clients-buttons button {
-    background: none;
-    border: none;
-    font-size: 40px;
-    color:rgb(126, 126, 126);
-    font-family: 'Black Han Sans', sans-serif;
-    transition-duration: 0.7s;
-}
-#clients-buttons button:hover{
-    color:white;
-    transform: scale(1.1);
-    cursor: pointer;
-}
-.clients-text{
+.clients-text {
     justify-self: center;
     align-self: center;
     font-family: "Black Han Sans", sans-serif;
-    color:white;
+    color: white;
     text-align: center;
     transform: translate(0px, 300px);
 }
+
 #portfolio {
     height: 1000px;
     background-color: yellow;
@@ -123,4 +141,95 @@ body {
 #contact {
     height: 1000px;
     background-color: blue;
+}
+
+
+
+
+.btn {
+    position: relative;
+    padding: 1.4rem 4.2rem;
+    padding-right: 3.1rem;
+    font-size: 1.4rem;
+    color: var(--inv);
+    letter-spacing: 1.1rem;
+    text-transform: uppercase;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:before,
+.btn:after {
+    content: '';
+    position: absolute;
+    transition: inherit;
+    z-index: -1;
+}
+
+.btn:hover {
+    color: var(--def);
+    transition-delay: .5s;
+}
+
+.btn:hover:before {
+    transition-delay: 0s;
+}
+
+.btn:hover:after {
+    background: var(--inv);
+    transition-delay: .35s;
+}
+
+
+.from-left:before,
+.from-left:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.from-left:before {
+    right: 0;
+    border: 1px solid var(--inv);
+    border-left: 0;
+    border-right: 0;
+}
+
+.from-left:after {
+    left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+    width: 100%;
+}
+
+.from-right:before,
+.from-right:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.from-right:before {
+    left: 0;
+    border: 1px solid var(--inv);
+    border-left: 0;
+    border-right: 0;
+}
+
+.from-right:after {
+    right: 0;
+}
+
+.from-right:hover:before,
+.from-right:hover:after {
+    width: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }

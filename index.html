@@ -10,6 +10,7 @@
     <link href="js/dist/jarallax.css" rel="stylesheet">
 
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/para.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Swiiika</title>
@@ -19,9 +20,37 @@
 </head>
 
 <body>
+    <div id="test">
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav> 
+      </div>
+      
+      <div class="menu-bg" id="menu-bg"></div>
+    </div>
     <div id="logo">
-        <div class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/824672611">
+        <div id="first" class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/824672611">
+
             <img id="name" src="assets/images/Swiiika_website_header.png" alt="">
+            <div id="socials">
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitch"></i></a>
+            </div>
         </div>
     </div>
     <div class="border">
@@ -35,9 +64,9 @@
     </div>
     <div id="clients">
         <div class="jarallax" data-jarallax data-jarallax-video="https://youtu.be/c1A0_57DcDI">
-            <div id="clients-buttons"><button id="influencers">Influencers</button> | <button
-                    id="businesses">Businesses</button>
-                <div class="clients-text">I edit funny anime gorls</div>
+            <div id="clients-buttons">
+                <div class="btn from-right">Influencers</div> | <div class="btn from-left" id="businesses">Businesses
+                </div>
             </div>
 
         </div>
@@ -67,3 +96,5 @@
 <script src="js/dist/jarallax.js"></script>
 <script src="js/dist/jarallax-video.js"></script>
 <script src="js/dist/jarallax-element.js"></script>
+<script src="js/menu.js"></script>
+<script src="https://kit.fontawesome.com/e23773eba1.js" crossorigin="anonymous"></script>
