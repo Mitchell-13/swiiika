@@ -88,7 +88,6 @@ body {
         transition-duration: 0.5s;
         text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
-
     #about-content {
         display: flex;
         align-self: center;
