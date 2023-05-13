@@ -56,15 +56,15 @@
     text-align: right;
 }
 
-.nav li a {
+.nav li a, .nav li {
     color: white;
     font-size: 40px;
     text-decoration: none;
-    transition-duration: 0.1s;
+    transition-duration: 0.3s;
 }
 
-.nav li a:hover {
-    font-weight: bold;
+.nav li a:hover, .nav li:hover {
+    transform: scale(1.1);
 }
 
 .menu-bg {
@@ -102,4 +102,11 @@
     width: 600px;
     height: 900px;
     transform: translate(60%, -30%);
+}
+
+#logo.visible{
+    opacity: 0;
+}
+#logo{
+    transition-duration: 0.5s;
 }

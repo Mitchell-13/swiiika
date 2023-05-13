@@ -23,3 +23,15 @@ function menuOnClick() {
   
   // Call the function on page load
   window.addEventListener('load', removeClassOnResize);
+
+
+  window.addEventListener('scroll', function() {
+    var stickyDiv = document.getElementById('logo');
+    var offset = window.innerHeight * 0.6; 
+  
+    if (window.scrollY > offset) {
+      stickyDiv.classList.remove('visible');
+    } else {
+      stickyDiv.classList.add('visible');
+    }
+  });
