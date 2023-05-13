@@ -110,6 +110,10 @@ body {
         border-radius: 50px;
         height: fit-content;
     }
+    
+#clients-buttons div {
+    width: 422px;
+}
 }
 
 .jarallax {
@@ -240,9 +244,6 @@ strong {
     padding-top: 50px;
 }
 
-#clients-buttons div {
-    width: 422px;
-}
 
 #clients-buttons span {
     background-color: white;
