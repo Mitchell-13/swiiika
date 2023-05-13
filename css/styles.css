@@ -20,6 +20,9 @@ body {
         height: 100px;
         width: 100%;
     }
+    #logo.visible{
+        opacity: 1 !important;
+    }
     .border-text {
         color: white;
         font-size: 60px;
