@@ -77,7 +77,7 @@
     white-space: nowrap;
     transform: translate(-50%, -50px);
     letter-spacing: 1px;
-    font-size: 4dvw;
+    font-size: 20px;
     opacity: 0;
     transition: all 0.3s;
 }
