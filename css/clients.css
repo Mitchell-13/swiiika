@@ -1,0 +1,100 @@
+@media screen and (max-width: 760px) {
+    .profile img {
+
+        height: 10dvh !important;
+    }
+
+    .container {}
+}
+
+@media screen and (min-width: 760px) {
+
+    .team {
+        margin: 200px;
+    }
+}
+
+#clients {
+    margin: 0;
+    padding-top: 60;
+    padding-bottom: 60;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.section-heading {
+    font-family: "Roboto Condensed", cursive;
+    text-align: center;
+    font-size: 64px;
+    color: #10996d;
+    margin: 0 0 70px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.profile {
+    position: relative;
+    transition: all 0.3s;
+    margin-top: 150px;
+}
+
+.profile:hover {
+    transform: translateY(25px);
+}
+
+.profile img {
+    height: 20dvh;
+    border-radius: 50%;
+    border: 5px solid #f7f7f7;
+    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+    background-color: white;
+    cursor: pointer;
+}
+
+.profile:not(:first-child) img {
+    margin-left: -20px;
+}
+
+.profile .name {
+    position: absolute;
+    background-color: #10996d;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding: 15px 30px;
+    border-radius: 100px;
+    bottom: -80px;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50px);
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.profile .name::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #10996d;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.profile img:hover+.name {
+    opacity: 1;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+}

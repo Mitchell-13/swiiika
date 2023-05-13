@@ -15,14 +15,17 @@ body {
     #name {
         width: 70%;
     }
-    #test{
+
+    #test {
         background-color: black;
         height: 100px;
         width: 100%;
     }
-    #logo.visible{
+
+    #logo.visible {
         opacity: 1 !important;
     }
+
     .border-text {
         color: white;
         font-size: 60px;
@@ -39,17 +42,17 @@ body {
         flex-wrap: wrap;
     }
 
-    #clients-buttons {
+    #portfolio-buttons {
         flex-wrap: wrap;
         height: fit-content;
     }
 
-    #clients-buttons div {
+    #portfolio-buttons div {
         text-align: center;
         transition-duration: 0.5s;
     }
 
-    #clients-buttons span {
+    #portfolio-buttons span {
         display: none;
     }
 
@@ -74,7 +77,8 @@ body {
         border-radius: 50px;
         height: fit-content;
     }
-    #about-content img{
+
+    #about-content img {
         height: 200px;
     }
 }
@@ -91,6 +95,7 @@ body {
         transition-duration: 0.5s;
         text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
+
     #about-content {
         display: flex;
         align-self: center;
@@ -112,10 +117,30 @@ body {
         border-radius: 50px;
         height: fit-content;
     }
-    
-#clients-buttons div {
-    width: 422px;
-}
+
+    #portfolio-buttons div {
+        width: 422px;
+    }
+
+    #portfolio-buttons {
+        position: relative;
+        justify-self: center;
+        font-size: 40px;
+        transform: translate(0px, 70px);
+        color: rgb(126, 126, 126);
+        font-weight: bolder;
+        display: flex;
+        padding-top: 50px;
+    }
+
+
+    #portfolio-buttons span {
+        background-color: white;
+        color: white;
+        margin: 0;
+        width: 4px;
+        height: 78.39px;
+    }
 }
 
 .jarallax {
@@ -226,49 +251,21 @@ strong {
 }
 
 #clients {
-    height: 1000px;
-    background-color: black;
+    background-color: rgb(10, 49, 34);
     scroll-margin-top: 100px;
-}
-
-#clients.jarallax {
-    flex-direction: column;
-}
-
-#clients-buttons {
-    position: relative;
-    justify-self: center;
-    font-size: 40px;
-    transform: translate(0px, 70px);
-    color: rgb(126, 126, 126);
-    font-weight: bolder;
-    display: flex;
-    padding-top: 50px;
-}
-
-
-#clients-buttons span {
-    background-color: white;
-    color: white;
-    margin: 0;
-    width: 4px;
-    height: 78.39px;
-}
-
-.clients-text {
-    justify-self: center;
-    align-self: center;
-    font-family: "Black Han Sans", sans-serif;
-    color: white;
-    text-align: center;
-    transform: translate(0px, 300px);
 }
 
 #portfolio {
     height: 1000px;
-    background-color: yellow;
+    background-color: rgb(0, 0, 0);
     scroll-margin-top: 100px;
 }
+
+#portfolio.jarallax {
+    flex-direction: column;
+}
+
+
 
 #contact {
     height: 1000px;
@@ -279,6 +276,8 @@ strong {
 
 
 
+
+/* Styles for Influencers and Businesses buttons   */
 .btn {
     position: relative;
     text-align: center;
@@ -306,6 +305,10 @@ strong {
 .btn:hover {
     color: var(--def);
     transition-delay: .5s;
+}
+.selected{
+    color: var(--def);
+    background: var(--inv);
 }
 
 .btn:hover:before {

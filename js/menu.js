@@ -35,3 +35,30 @@ function menuOnClick() {
       stickyDiv.classList.add('visible');
     }
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get the businesses and influencers div elements by their IDs
+    const businessesDiv = document.getElementById("businesses");
+    const influencersDiv = document.getElementById("influencers");
+  
+    // Define a function to toggle the "selected" class on a given element
+    function toggleSelectedClass(element) {
+      element.classList.toggle("selected");
+    }
+  
+    // Add a click event listener to the businesses div
+    businessesDiv.addEventListener("click", function() {
+      if (!businessesDiv.classList.contains("selected")) {
+        toggleSelectedClass(businessesDiv);
+        toggleSelectedClass(influencersDiv);
+      }
+    });
+  
+    // Add a click event listener to the influencers div
+    influencersDiv.addEventListener("click", function() {
+      if (!influencersDiv.classList.contains("selected")) {
+        toggleSelectedClass(influencersDiv);
+        toggleSelectedClass(businessesDiv);
+      }
+    });
+  });
