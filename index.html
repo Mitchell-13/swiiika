@@ -15,41 +15,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Swiiika</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
     </style>
 </head>
 
 <body>
     <div id="test">
-    <div id="menu">
-        <div id="menu-bar" onclick="menuOnClick()">
-          <div id="bar1" class="bar"></div>
-          <div id="bar2" class="bar"></div>
-          <div id="bar3" class="bar"></div>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#logo">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav" id="nav">
-          <ul>
-            <li><a href="#logo">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#clients">Clients</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav> 
-      </div>
-      
-      <div class="menu-bg" id="menu-bg"></div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <div id="logo"><a href="#top"><img src="assets/images/logo.png" alt=""></a></div>
     </div>
-    <div id="logo">
+    <div id="head">
         <div id="first" class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/824672611">
 
             <img id="name" src="assets/images/Swiiika_website_header.png" alt="">
             <div id="socials">
-                <a href="#"><i class="fa-brands fa-discord"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                <a href="https://discordapp.com/users/707445225559425096"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://twitter.com/Swiiika_"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@swiiika?lang=en"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/channel/UCmB_ZdiFYmJUy9vEsCv55mA"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.twitch.tv/swiiika"><i class="fa-brands fa-twitch"></i></a>
             </div>
         </div>
     </div>
@@ -57,7 +60,16 @@
         <div class="border-text">About</div>
     </div>
     <div id="about">
-        <div class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/824655142"></div>
+        <div id="about-image" class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/825711115"></div>
+        <div id="about-content">
+            <p><strong>Hello! I'm Connor,</strong> a video editor and drone videographer with <strong>3+ years of
+                    experience</strong> creating engaging social media videos for influencers and businesses. <strong>My
+                    work has garnered over one billion views</strong>, and I pride myself on delivering high-quality
+                content that captures my clients' vision and engages their audience. Check out my portfolio to see some
+                of my past work, and <strong>let's collaborate to take your video content to the next level.</strong>
+            </p>
+            <div id="headshot"><img src="assets/images/placeholder.webp" height="300px"></div>
+        </div>
     </div>
     <div class="border">
         <div class="border-text">Clients</div>
@@ -65,8 +77,8 @@
     <div id="clients">
         <div class="jarallax" data-jarallax data-jarallax-video="https://youtu.be/c1A0_57DcDI">
             <div id="clients-buttons">
-                <div class="btn from-right" id="influencers">Influencers</div> 
-                <span></span> 
+                <div class="btn from-right" id="influencers">Influencers</div>
+                <span></span>
                 <div class="btn from-left" id="businesses">Businesses
                 </div>
             </div>

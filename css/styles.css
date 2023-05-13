@@ -1,5 +1,6 @@
-html{
+html {
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 body {
@@ -7,14 +8,18 @@ body {
     --def: #363b3d;
     --inv: #fff;
     margin: auto;
-    
+
 }
 
 @media screen and (max-width: 760px) {
     #name {
         width: 70%;
     }
-
+    #test{
+        background-color: black;
+        height: 100px;
+        width: 100%;
+    }
     .border-text {
         color: white;
         font-size: 60px;
@@ -26,19 +31,48 @@ body {
         transition-duration: 0.5s;
         text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
-    #socials{
+
+    #socials {
         flex-wrap: wrap;
     }
-    #clients-buttons{
+
+    #clients-buttons {
         flex-wrap: wrap;
         height: fit-content;
     }
-    #clients-buttons div{
+
+    #clients-buttons div {
         text-align: center;
         transition-duration: 0.5s;
     }
-    #clients-buttons span{
+
+    #clients-buttons span {
         display: none;
+    }
+
+    #about-content {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: space-around;
+
+        color: white;
+        flex-direction: column;
+        z-index: 2;
+        text-shadow: 2px 2px #000;
+    }
+
+    #about-content p {
+        width: 90%;
+        font-size: 4vw;
+        font-family: 'Roboto Condensed', sans-serif;
+        background: rgba(0, 0, 0, 0.815);
+        padding: 20px;
+        border-radius: 50px;
+        height: fit-content;
+    }
+    #about-content img{
+        height: 200px;
     }
 }
 
@@ -54,12 +88,50 @@ body {
         transition-duration: 0.5s;
         text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
+
+    #about-content {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: space-around;
+
+        color: white;
+        flex-direction: row;
+        z-index: 2;
+        text-shadow: 2px 2px #000;
+    }
+
+    #about-content p {
+        width: 60%;
+        font-size: 1.5vw;
+        font-family: 'Roboto Condensed';
+        background: rgba(0, 0, 0, 0.815);
+        padding: 20px;
+        border-radius: 50px;
+        height: fit-content;
+    }
 }
 
 .jarallax {
     height: inherit;
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+#logo {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: fit-content;
+    padding-left: 30px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#logo img {
+    height: 100px;
+    transform: rotatez(10deg)
 }
 
 #first {
@@ -94,7 +166,7 @@ body {
     transform: scale(1.2);
 }
 
-#logo {
+#head {
     height: 1000px;
     background-color: black;
     overflow: hidden;
@@ -118,13 +190,31 @@ body {
 #about {
     position: relative;
     height: 800;
-    background-color: black;
+    background-color: #2f97bd;
     scroll-margin-top: 100px;
+    display: flex;
+    height: 700px;
+}
+
+#about-image {
+    z-index: 0;
+    position: absolute;
+    background-color: #2f97bd;
+    width: 100%;
+
+}
+
+strong {
+    color: #38e4ae
+}
+
+#VideoWorker-2 {
+    opacity: 50%;
 }
 
 .border {
     position: absolute;
-    z-index: 10;
+    z-index: 3;
     display: flex;
     justify-content: center;
 }
@@ -133,10 +223,6 @@ body {
     height: 1000px;
     background-color: black;
     scroll-margin-top: 100px;
-}
-
-#VideoWorker-2 {
-    opacity: 50%;
 }
 
 #clients.jarallax {
@@ -157,10 +243,11 @@ body {
 #clients-buttons div {
     width: 422px;
 }
-#clients-buttons span{
+
+#clients-buttons span {
     background-color: white;
-    color:white;
-    margin:0;
+    color: white;
+    margin: 0;
     width: 4px;
     height: 78.39px;
 }
