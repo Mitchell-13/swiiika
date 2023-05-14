@@ -2,6 +2,17 @@
     .team {
         margin-right: 10px;
         margin-left: 10px;
+        height: 100%;
+        margin-bottom: 150px;
+    }
+    .profile img {
+        height: 4em;
+        transition-duration: 0.5s;
+        border-radius: 50%;
+        border: 5px solid #000000;
+        filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+        background-color: white;
+        cursor: pointer;
     }
 }
 
@@ -10,17 +21,25 @@
     .team {
         margin-bottom: 150px;
     }
+    
+.profile img {
+    height: 12em;
+    border-radius: 50%;
+    border: 5px solid #000000;
+    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
 }
 
 #clients {
     margin: 0;
     padding-top: 60;
     padding-bottom: 60;
-    min-height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: fit-content;
 }
 
 .section-heading {
@@ -33,7 +52,7 @@
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 90%;
     flex-wrap: wrap;
     max-width: 1440px;
@@ -44,23 +63,12 @@
     position: relative;
     transition: all 0.3s;
     margin-top: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 .profile:hover {
     transform: translateY(25px);
-}
-
-.profile img {
-    height: 12em;
-    border-radius: 50%;
-    border: 5px solid #000000;
-    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
-    background-color: white;
-    cursor: pointer;
-}
-
-.profile:not(:first-child) img {
-    margin-left: -20px;
 }
 
 .profile .name {
@@ -75,9 +83,9 @@
     white-space: nowrap;
     transform: translate(-50%, -50px);
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: .5em;
     opacity: 0;
-    transition: all 0.3s;
+    transition: all 0.3s;;
 }
 
 .profile .name::before {
