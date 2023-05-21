@@ -1,13 +1,82 @@
+@media screen and (max-width: 760px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .container a:last-child {
+        grid-column: 2;
+    }
+    .team{
+        margin-bottom:10px;
+    }
+.profile img{
+
+    width: 25vw;
+}
+.section-heading{
+    display: none;
+}
+}
+
+@media screen and (min-width:760px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        max-width: 1440px;
+        margin: 0 auto;
+        align-content: center;
+    }
+    .team{
+
+    margin-bottom: 150px;
+    }
+
+    .profile:hover {
+        transform: translateY(25px);
+    }
+
+    .profile .name::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: #10996d;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+.profile img{
+
+    width: 10vw;
+}
+    .profile img:hover+.name {
+        opacity: 1;
+        transform: translateX(-50%);
+        box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+    }
+
+    .profile:not(:first-child) img {
+        margin-left: -1.5vh;
+    }
+    .profile:not(:first-child) img span {
+        margin-left: -1.5vh;
+    }
+}
+
 
 #clients {
     margin: 0;
-    width:100%;
+    width: 100%;
     padding-bottom: 60;
-    height: 600px;
     display: flex;
     justify-content: center;
     background-color: black;
 }
+
 #client-bg {
     z-index: 0;
     position: absolute;
@@ -19,25 +88,28 @@
 #VideoWorker-1 {
     opacity: 35%;
 }
+
 .team {
-    margin-bottom: 150px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.team p{
-    padding-top:50px;
-    color:white;
-    font-weight: bold;
-}
-.container {
+    height: fit-content;
     display: flex;
-    justify-content: center;
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
-    align-content: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.team p {
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    font-family: "Roboto Condensed";
+    text-align: center;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.team p span {
+    font-size: 2.5vw;
+    font-weight: bold;
+    line-height: 10px;
 }
 
 .profile {
@@ -46,29 +118,11 @@
 }
 
 .profile img {
-    width: 10vw;
     border-radius: 50%;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
     filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
     background-color: white;
     cursor: pointer;
-}
-
-.profile:not(:first-child) img {
-    margin-left: -1.2vh;
-}
-
-.section-heading {
-    font-family: "Roboto Condensed", cursive;
-    text-align: center;
-    font-size: 64px;
-    color: #10996d;
-    margin: 0 0 70px;
-}
-
-
-.profile:hover {
-    transform: translateY(25px);
 }
 
 .profile .name {
@@ -83,25 +137,8 @@
     white-space: nowrap;
     transform: translate(-50%, -50px);
     letter-spacing: 1px;
-    font-size: 1vw;
+    font-size: 1.2vw;
     opacity: 0;
     transition: all 0.3s;
     ;
-}
-
-.profile .name::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: #10996d;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.profile img:hover+.name {
-    opacity: 1;
-    transform: translateX(-50%);
-    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
 }

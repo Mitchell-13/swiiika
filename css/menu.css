@@ -3,17 +3,45 @@
 }
 @media screen and (max-width: 760px) {
 
+
+    #test {
+        background-color: black;
+        height: 100px;
+        width: 100%;
+    }
+
+    #logo.visible {
+        opacity: 1 !important;
+    }
+
   
 }
 @media screen and (min-width: 760px) {
 
 }
+
 #test {
     position: sticky;
     z-index: 10;
     top: 0;
     display: flex;
 }
+
+#logo {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: fit-content;
+    padding-left: 30px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#logo img {
+    height: 100px;
+    transform: rotatez(10deg)
+}
+
 .menu-bg,
 #menu {
     top:0;

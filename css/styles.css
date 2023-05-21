@@ -12,19 +12,7 @@ body {
 }
 
 @media screen and (max-width: 760px) {
-    #name {
-        width: 70%;
-    }
-
-    #test {
-        background-color: black;
-        height: 100px;
-        width: 100%;
-    }
-
-    #logo.visible {
-        opacity: 1 !important;
-    }
+    
 
     .border-text {
         color: white;
@@ -56,31 +44,6 @@ body {
         display: none;
     }
 
-    #about-content {
-        display: flex;
-        align-self: center;
-        align-items: center;
-        justify-content: space-around;
-
-        color: white;
-        flex-direction: column;
-        z-index: 2;
-        text-shadow: 2px 2px #000;
-    }
-
-    #about-content p {
-        width: 90%;
-        font-size: 2vw;
-        font-family: 'Roboto Condensed', sans-serif;
-        background: rgba(0, 0, 0, 0.815);
-        padding: 20px;
-        border-radius: 50px;
-        height: fit-content;
-    }
-
-    #about-content img {
-        height: 200px;
-    }
 }
 
 @media screen and (min-width: 760px) {
@@ -96,27 +59,6 @@ body {
         text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
 
-    #about-content {
-        display: flex;
-        align-self: center;
-        align-items: center;
-        justify-content: space-around;
-
-        color: white;
-        flex-direction: row;
-        z-index: 2;
-        text-shadow: 2px 2px #000;
-    }
-
-    #about-content p {
-        width: 60%;
-        font-size: 2vw;
-        font-family: 'Roboto Condensed';
-        background: rgba(0, 0, 0, 0.815);
-        padding: 20px;
-        border-radius: 50px;
-        height: fit-content;
-    }
 
     #portfolio-buttons div {
         width: 422px;
@@ -150,72 +92,12 @@ body {
     width: 100%;
 }
 
-#logo {
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: fit-content;
-    padding-left: 30px;
-    border-bottom-right-radius: 20px;
-
-}
-
-#logo img {
-    height: 100px;
-    transform: rotatez(10deg)
-}
-
-#first {
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-}
-
-#name {
-    justify-self: center;
-    align-self: center;
-    display: flex;
-    scroll-margin-top: 100px;
-}
-
-#socials {
-    justify-content: center;
-    display: flex;
-}
-
-.fa-brands {
-    color: rgb(219, 219, 219);
-    font-size: 40px;
-    margin: 40px;
-    margin-top: 20px;
-    transition-duration: 0.3s;
-}
-
-.fa-brands:hover {
-    color: rgb(255, 255, 255);
-    transform: scale(1.2);
-}
-
-#head {
-    height: 1000px;
-    background-color: black;
-    overflow: hidden;
-}
 
 .border {
     background-color: black;
     height: 10px;
     width: 100%;
     overflow: visible;
-}
-
-.title {
-    color: white;
-    border: 2px solid white;
-    width: fit-content;
-    height: fit-content;
-    z-index: 20;
 }
 
 #about {
@@ -225,10 +107,6 @@ body {
     scroll-margin-top: 100px;
     display: flex;
     height: 700px;
-}
-
-strong {
-    color: #38e4ae
 }
 
 
