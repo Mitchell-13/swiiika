@@ -70,7 +70,7 @@ body {
 
     #about-content p {
         width: 90%;
-        font-size: 1em;
+        font-size: 2vw;
         font-family: 'Roboto Condensed', sans-serif;
         background: rgba(0, 0, 0, 0.815);
         padding: 20px;
@@ -110,7 +110,7 @@ body {
 
     #about-content p {
         width: 60%;
-        font-size: 1em;
+        font-size: 2vw;
         font-family: 'Roboto Condensed';
         background: rgba(0, 0, 0, 0.815);
         padding: 20px;
@@ -227,21 +227,10 @@ body {
     height: 700px;
 }
 
-#about-image {
-    z-index: 0;
-    position: absolute;
-    background-color: #2f97bd;
-    width: 100%;
-
-}
-
 strong {
     color: #38e4ae
 }
 
-#VideoWorker-2 {
-    opacity: 50%;
-}
 
 .border {
     position: absolute;

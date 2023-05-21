@@ -1,45 +1,61 @@
-@media screen and (max-width: 760px) {
-    .team {
-        margin-right: 10px;
-        margin-left: 10px;
-        height: 100%;
-        margin-bottom: 150px;
-    }
-    .profile img {
-        height: 4em;
-        transition-duration: 0.5s;
-        border-radius: 50%;
-        border: 5px solid #000000;
-        filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
-        background-color: white;
-        cursor: pointer;
-    }
-}
-
-@media screen and (min-width: 760px) {
-
-    .team {
-        margin-bottom: 150px;
-    }
-    
-.profile img {
-    height: 12em;
-    border-radius: 50%;
-    border: 5px solid #000000;
-    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
-    background-color: white;
-    cursor: pointer;
-    transition-duration: 0.5s;
-}
-}
 
 #clients {
     margin: 0;
-    padding-top: 60;
+    width:100%;
     padding-bottom: 60;
-    height: fit-content;
+    height: 600px;
     display: flex;
     justify-content: center;
+    background-color: black;
+}
+#client-bg {
+    z-index: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+
+}
+
+#VideoWorker-1 {
+    opacity: 35%;
+}
+.team {
+    margin-bottom: 150px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team p{
+    padding-top:50px;
+    color:white;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.profile {
+    position: relative;
+    transition: all 0.3s;
+}
+
+.profile img {
+    width: 10vw;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+    background-color: white;
+    cursor: pointer;
+}
+
+.profile:not(:first-child) img {
+    margin-left: -1.2vh;
 }
 
 .section-heading {
@@ -50,22 +66,6 @@
     margin: 0 0 70px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    flex-wrap: wrap;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.profile {
-    position: relative;
-    transition: all 0.3s;
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-}
 
 .profile:hover {
     transform: translateY(25px);
@@ -75,7 +75,7 @@
     position: absolute;
     background-color: #10996d;
     color: #fff;
-    font-family: "Bebas Neue", cursive;
+    font-family: "Roboto Condensed";
     padding: 15px 30px;
     border-radius: 100px;
     bottom: -80px;
@@ -83,9 +83,10 @@
     white-space: nowrap;
     transform: translate(-50%, -50px);
     letter-spacing: 1px;
-    font-size: .5em;
+    font-size: 1vw;
     opacity: 0;
-    transition: all 0.3s;;
+    transition: all 0.3s;
+    ;
 }
 
 .profile .name::before {
