@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 760px) {
     #name {
-
+        max-width: 515px;
         width: 35%;
     }
 
