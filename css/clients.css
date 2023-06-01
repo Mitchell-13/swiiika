@@ -69,6 +69,7 @@
 
 
 #clients {
+    scroll-margin-top: 100px;
     margin: 0;
     width: 100%;
     padding-bottom: 60;
@@ -78,11 +79,10 @@
 }
 
 #client-bg {
-    z-index: 0;
     position: absolute;
     background-color: black;
     width: 100%;
-
+overflow: hidden;
 }
 
 #VideoWorker-1 {
@@ -93,23 +93,26 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 .team p {
     color: white;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: "Roboto Condensed";
     text-align: center;
-    padding-left:10%;
-    padding-right:10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+    border-radius: 50px;
 }
 
 .team p span {
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     font-weight: bold;
     line-height: 10px;
+    color: #38e4ae;
 }
 
 .profile {

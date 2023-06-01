@@ -11,6 +11,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <link href="css/clients.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
     <link href="css/about.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/para.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -74,14 +75,14 @@
             </div>
         </div>
     </div>
-
     <a href="#clients">
         <div class="border">
             <div class="border-text">Clients</div>
         </div>
     </a>
     <div id="clients">
-        <div id="client-bg" class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/825711115" data-speed="0.2">
+        <div id="client-bg" class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/825711115"
+            data-speed="0.2">
             <section class="team">
                 <p class="section-heading">I've worked with a wide range of clients, including non-profits, influencers,
                     tech companies, and streamers.
@@ -131,11 +132,59 @@
         </div>
     </a>
     <div id="portfolio">
-        <div class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/826404982">
+        <div id="portfolio-bg" class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/826404982">
             <div id="portfolio-buttons">
                 <div class="btn from-right selected" id="influencers">Influencers</div>
                 <span></span>
                 <div class="btn from-left" id="businesses">Businesses</div>
+            </div>
+            <button class="arrow-right" type="button" onclick="handleLeftClick()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
+            <button class="arrow-left" type="button" onclick="handleRightClick()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
+            <div id="portfolio-content">
+                <section class="port-section" data-index="0" data-status="active">
+                    <div id="shorts-container">
+                        <iframe id="#filianvid" width="653" height="1161" src="https://www.youtube.com/embed/6l_mjoMPTVA"
+                            title="This is why you always need a safeword" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div id="shorts-desc">
+                        <p>funy video haha a;lsjdf;lajsdl;fjasl;djf;lasjdf;lasjdf;ljasdlfja;lsjdf;lkajsdf</p>
+                    </div>
+                </section>
+                <section class="port-section" data-index="1" data-status="inactive">
+                    <div id="shorts-container">
+                        <iframe id="#filianvid" height="500" src="https://www.youtube.com/embed/6l_mjoMPTVA"
+                            title="This is why you always need a safeword" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div id="shorts-desc">
+                        <p> a;lsjdf;lajsdl;fjasl;djf;lasjdf;lasjdf;ljasdlfja;lsjdf;lkajsdf</p>
+                    </div>
+                </section>
+                <section class="port-section" data-index="2" data-status="inactive">
+                    <div id="shorts-container">
+                        <iframe id="#filianvid" height="500" src="https://www.youtube.com/embed/6l_mjoMPTVA"
+                            title="This is why you always need a safeword" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div id="shorts-desc">
+                        <p>other text z.,xmnx.,cmvnz.,xmcnv.,mznx</p>
+                    </div>
+                </section>
+                <section class="port-section" data-index="3" data-status="inactive">
+                    <div id="shorts-container">
+                        <iframe id="#filianvid" height="500" src="https://www.youtube.com/embed/6l_mjoMPTVA"
+                            title="This is why you always need a safeword" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div id="shorts-desc">
+                        <p>more text q2oiuopiwuqeporiqpwouie</p>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
@@ -155,10 +204,11 @@
 <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
 
 <!-- Lazy Load images -->
-<!-- <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script> -->
+<script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
 <script src="js/dist/jarallax.js"></script>
 <script src="js/dist/jarallax-video.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/portfolio.js"></script>
 <script src="js/clients.js"></script>
 
 <script src="js/dist/jarallax-element.js"></script>

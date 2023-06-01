@@ -53,9 +53,6 @@ a, a:visited, a:hover, a:focus {
 a:hover, a:focus {
     color: #4f4f4f;
 }
-.jarallax {
-    min-height: 600px;
-}
 .jarallax-keep-img.demo-float-left {
     margin-right: 15px;
     margin-left: -60px;

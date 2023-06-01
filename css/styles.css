@@ -25,25 +25,6 @@ body {
         transition-duration: 0.5s;
         text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
-
-    #socials {
-        flex-wrap: wrap;
-    }
-
-    #portfolio-buttons {
-        flex-wrap: wrap;
-        height: fit-content;
-    }
-
-    #portfolio-buttons div {
-        text-align: center;
-        transition-duration: 0.5s;
-    }
-
-    #portfolio-buttons span {
-        display: none;
-    }
-
 }
 
 @media screen and (min-width: 760px) {
@@ -59,30 +40,6 @@ body {
         text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
 
-
-    #portfolio-buttons div {
-        width: 422px;
-    }
-
-    #portfolio-buttons {
-        position: relative;
-        justify-self: center;
-        font-size: 40px;
-        transform: translate(0px, 70px);
-        color: rgb(126, 126, 126);
-        font-weight: bolder;
-        display: flex;
-        padding-top: 50px;
-    }
-
-
-    #portfolio-buttons span {
-        background-color: white;
-        color: white;
-        margin: 0;
-        width: 4px;
-        height: 78.39px;
-    }
 }
 
 .jarallax {
@@ -98,40 +55,11 @@ body {
     height: 10px;
     width: 100%;
     overflow: visible;
-}
-
-#about {
-    position: relative;
-    height: 800;
-    background-color: #2f97bd;
-    scroll-margin-top: 100px;
-    display: flex;
-    height: 700px;
-}
-
-
-.border {
     position: absolute;
     z-index: 3;
     display: flex;
     justify-content: center;
 }
-
-#clients {
-    background-color: rgb(207, 207, 207);
-    scroll-margin-top: 100px;
-}
-
-#portfolio {
-    height: 1000px;
-    background-color: rgb(0, 0, 0);
-    scroll-margin-top: 100px;
-}
-
-#portfolio.jarallax {
-    flex-direction: column;
-}
-
 
 
 #contact {
@@ -176,8 +104,8 @@ body {
 .selected{
     color: var(--def);
     background: var(--inv);
+    transition: none;
 }
-
 .btn:hover:before {
     transition-delay: 0s;
 }
