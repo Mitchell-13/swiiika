@@ -62,9 +62,6 @@
     .profile:not(:first-child) img {
         margin-left: -1.5vh;
     }
-    .profile:not(:first-child) img span {
-        margin-left: -1.5vh;
-    }
 }
 
 

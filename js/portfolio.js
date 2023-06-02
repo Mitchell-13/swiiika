@@ -33,3 +33,22 @@ const handleLeftClick = () => {
     activeIndex = nextIndex;
   });
 }
+
+document.getElementById('influencers').addEventListener('click', function() {
+  var div1 = document.getElementById('influencer-content');
+  var div2 = document.getElementById('business-content');
+
+  div2.classList.add('portfolio-hidden');
+  setTimeout(function() {
+  div1.classList.remove('portfolio-hidden');
+}, 500);
+});
+document.getElementById('businesses').addEventListener('click', function() {
+  var div2 = document.getElementById('influencer-content');
+  var div1 = document.getElementById('business-content');
+
+  div2.classList.add('portfolio-hidden');
+  setTimeout(function() {
+  div1.classList.remove('portfolio-hidden');
+}, 500);
+});

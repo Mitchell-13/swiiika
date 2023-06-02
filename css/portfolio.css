@@ -108,8 +108,20 @@
     height: 100%;
     width: 100%;
 }
+.portfolio-hidden{
+    opacity: 0%;
+}
+#influencer-content, #business-content{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.4s;
+}
 
-#portfolio-content section {
+#influencer-content section {
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -120,38 +132,34 @@
     transition:transform 400ms ease;
 }
 
-#portfolio-content section[data-status="inactive"] {
+#influencer-content section[data-status="inactive"] {
     transform: translateX(-100%);
 }
-#portfolio-content section[data-status="active"] {
+#influencer-content section[data-status="active"] {
     transition-delay: 300ms;
 }
-#portfolio-content section[data-status="after"]{
+#influencer-content section[data-status="after"]{
     transform: translateX(100%);
 }
-#portfolio-content section[data-status="before"] {
+#influencer-content section[data-status="before"] {
     transform: translateX(-100%);
 }
-#portfolio-content section[data-status="becoming-active-from-before"] {
+#influencer-content section[data-status="becoming-active-from-before"] {
     transform: translateX(-200%);
     transition: none;
 }
 
-#portfolio-content section[data-status="becoming-active-from-after"] {
+#influencer-content section[data-status="becoming-active-from-after"] {
     transform: translateX(200%);
     transition:none;
 }
 
 
-#shorts-container{
-
-}
 #shorts-desc {
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.5vw;
 }
-
 
 
 
