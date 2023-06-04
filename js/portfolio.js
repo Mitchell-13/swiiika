@@ -1,11 +1,11 @@
-let activeIndex = 0;
+let activeIndexLR = 0;
 
-const groups = document.getElementsByClassName("port-section");
+const groupsLR = document.getElementsByClassName("port-section");
 
-const handleRightClick = () => {
-  const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
+const handleLeftClick = () => {
+  const nextIndex = activeIndexLR + 1 <= groupsLR.length - 1 ? activeIndexLR + 1 : 0;
 
-  const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
+  const currentGroup = document.querySelector(`[data-index="${activeIndexLR}"]`),
     nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
 
   currentGroup.dataset.status = "after";
@@ -14,14 +14,14 @@ const handleRightClick = () => {
 
   setTimeout(() => {
     nextGroup.dataset.status = "active";
-    activeIndex = nextIndex;
+    activeIndexLR = nextIndex;
   });
 }
 
-const handleLeftClick = () => {
-  const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
+const handleRightClick = () => {
+  const nextIndex = activeIndexLR - 1 >= 0 ? activeIndexLR - 1 : groupsLR.length - 1;
 
-  const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
+  const currentGroup = document.querySelector(`[data-index="${activeIndexLR}"]`),
     nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
 
   currentGroup.dataset.status = "before";
@@ -30,9 +30,56 @@ const handleLeftClick = () => {
 
   setTimeout(() => {
     nextGroup.dataset.status = "active";
-    activeIndex = nextIndex;
+    activeIndexLR = nextIndex;
   });
 }
+
+let activeIndexUD = 0;
+const groupsUD = document.getElementsByClassName("scroll-video");
+const handleDownClick = () => {
+  const nextIndex = activeIndexUD + 1 <= groupsUD.length - 1 ? activeIndexUD + 1 : 0;
+  const currentGroup = document.querySelector(`[UD-data-index="${activeIndexUD}"]`),
+    nextGroup = document.querySelector(`[UD-data-index="${nextIndex}"]`);
+  activateDot(nextIndex);
+  currentGroup.dataset.status = "below";
+  nextGroup.dataset.status = "becoming-active-from-above";
+
+  setTimeout(() => {
+    nextGroup.dataset.status = "active";
+    activeIndexUD = nextIndex;
+  });
+}
+
+const handleUpClick = () => {
+  const nextIndex = activeIndexUD - 1 >= 0 ? activeIndexUD - 1 : groupsUD.length - 1;
+
+  const currentGroup = document.querySelector(`[UD-data-index="${activeIndexUD}"]`),
+    nextGroup = document.querySelector(`[UD-data-index="${nextIndex}"]`);
+
+  activateDot(nextIndex);
+  currentGroup.dataset.status = "above";
+
+  nextGroup.dataset.status = "becoming-active-from-below";
+
+  setTimeout(() => {
+    nextGroup.dataset.status = "active";
+    activeIndexUD = nextIndex;
+  });
+}
+
+function activateDot(index) {
+  var dots = document.getElementsByClassName('dot');
+
+  // Remove dot-active class from all dots
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].classList.remove('dot-active');
+  }
+  // Add dot-active class to the dot with the specified index
+  dots[index].classList.add('dot-active');
+}
+
+
+
 
 document.getElementById('influencers').addEventListener('click', function () {
   var div1 = document.getElementById('influencer-content');

@@ -140,101 +140,87 @@
                 <span></span>
                 <div class="btn from-left" id="businesses">Businesses</div>
             </div>
-            <button class="arrow-right" type="button" onclick="handleLeftClick()"><i
+            <button class="arrow-right" type="button" onclick="handleRightClick()"><i
                     class="fa-solid fa-arrow-right bounce-right"></i></button>
-            <button class="arrow-left" type="button" onclick="handleRightClick()"><i
+            <button class="arrow-left" type="button" onclick="handleLeftClick()"><i
                     class="fa-solid fa-arrow-left bounce-left"></i></button>
             <div id="portfolio-content">
                 <div id="influencer-content" class="">
                     <section class="port-section" data-index="0" data-status="active">
                         <div class="video-dots">
-                            <div class="dot dot-active"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
+                            <div class="dot dot-0 dot-active" ></div>
+                            <div class="dot dot-1" ></div>
+                            <div class="dot dot-2" ></div>
+                            <div class="dot dot-3" ></div>
+                            <div class="dot dot-4"></div>
                         </div>
-                        <!--<section class="scroll-video" data-index="0" data-status="active">-->
+                        <div id="video-container-test">
                             <div id="shorts-container">
-                                <button id="playpause" class='play-button showhide' onclick="playPause('filian1')"></button>
-                                <div class="top-bar showhide"><button class="arrow-up"><i class="fa-solid fa-angle-up"></i></button></div>
-                                <div class="bottom-bar showhide"><button class="arrow-down"><i class="fa-solid fa-angle-down"></i></button></div>
-                                <video height="600" id="filian1">
-                                    <source src="assets/videos/filian/Filian_slices_natasha_V2.mp4" type="video/mp4">
-                                </video>
+                                <div class="top-bar showhide"><button class="arrow-up" onclick="handleUpClick()">
+                                        <i class="fa-solid fa-angle-up"></i></button>
+                                </div>
+                                <div class="bottom-bar showhide"><button class="arrow-down" onclick="handleDownClick()">
+                                        <i class="fa-solid fa-angle-down"></i></button>
+                                </div>
+                                <section class="scroll-video" UD-data-index="0" data-status="active">
+                                    <button id="playpause" class='play-button showhide'
+                                        onclick="playPause('filian1')"></button>
+                                    <video height="600" id="filian1" preload="metadata">
+                                        <source src="assets/videos/filian/Filian_slices_natasha_V2.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </section>
+                                <section class="scroll-video" UD-data-index="1" data-status="inactive">
+                                    <button id="playpause" class='play-button showhide'
+                                        onclick="playPause('filian2')"></button>
+                                    <video height="600" id="filian2" preload="metadata">
+                                        <source src="assets/videos/filian/Filian_Omegle_Reactions_2.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </section>
+                                <section class="scroll-video" UD-data-index="2" data-status="inactive">
+                                    <button id="playpause" class='play-button showhide'
+                                        onclick="playPause('filian3')"></button>
+                                    <video height="600" id="filian3" preload="metadata">
+                                        <source src="assets/videos/filian/Filian_gets_splattered_by_miz_V2.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </section>
+                                <section class="scroll-video" UD-data-index="3" data-status="inactive">
+                                    <button id="playpause" class='play-button showhide'
+                                        onclick="playPause('filian4')"></button>
+                                    <video height="600" id="filian4" preload="metadata">
+                                        <source
+                                            src="assets/videos/filian/Filian_proves_shes_an_anime_girl_on_omegleV2.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </section>
+                                <section class="scroll-video" UD-data-index="4" data-status="inactive">
+                                    <button id="playpause" class='play-button showhide'
+                                        onclick="playPause('filian5')"></button>
+                                    <video height="600" id="filian5" preload="metadata">
+                                        <source src="assets/videos/filian/Filian_finally_caught_her_tail.mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </section>
+
                             </div>
-                            <div id="shorts-desc">
-                                <p class="name">FILIAN <br> <span class=views>766,350,000+ <br>Views</span></p>
 
-                                <p>funy video haha a;lsjdf;lajsdl;fjasl;djf;lasjdf;lasjdf;ljasdlfja;lsjdf;lkajsdf</p>
-                            </div>
-                            <div class="shorts-profile-picture"><img src="assets/images/clients/filian.png"
-                                    alt="filian profile picture"></div>
-                        <!--</section>
-                        <section class="scroll-video" data-index="1" data-status="inactive">
-
-                        </section>
-                        <section class="scroll-video" data-index="2" data-status="inactive">
-
-                        </section>
-                        <section class="scroll-video" data-index="3" data-status="inactive">
-
-                        </section>
-                        <section class="scroll-video" data-index="4" data-status="inactive">
-
-                        </section>-->
-                    </section>
-                    <section class="port-section" data-index="1" data-status="inactive">
-                        <div id="shorts-container">
-                            <button id="playpause" class='play-button' onclick="playPause('filian2')"></button>
-                            <video height="600" id="filian2">
-                                <source src="assets/videos/filian/Filian_Omegle_Reactions_2.mp4" type="video/mp4">
-                            </video>
                         </div>
                         <div id="shorts-desc">
-                            <p> a;lsjdf;lajsdl;fjasl;djf;lasjdf;lasjdf;ljasdlfja;lsjdf;lkajsdf</p>
+                            <p class="name">FILIAN <br> <span class=views>766,350,000+ <br>Views</span></p>
+
+                            <p>funy video haha a;lsjdf;lajsdl;fjasl;djf;lasjdf;lasjdf;ljasdlfja;lsjdf;lkajsdf</p>
                         </div>
+                        <div class="shorts-profile-picture"><img src="assets/images/clients/filian.png"
+                                alt="filian profile picture"></div>
                     </section>
-                    <section class="port-section" data-index="2" data-status="inactive">
-                        <div id="shorts-container">
-                            <button id="playpause" class='play-button' onclick="playPause('filian3')"></button>
-                            <video height="600" id="filian3">
-                                <source src="assets/videos/filian/Filian_gets_splattered_by_miz_V2.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-                        <div id="shorts-desc">
-                            <p>other text z.,xmnx.,cmvnz.,xmcnv.,mznx</p>
-                        </div>
-                    </section>
-                    <section class="port-section" data-index="3" data-status="inactive">
-                        <div id="shorts-container">
-                            <button id="playpause" class='play-button' onclick="playPause('filian4')"></button>
-                            <video height="600" id="filian4">
-                                <source src="assets/videos/filian/Filian_proves_shes_an_anime_girl_on_omegleV2.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-                        <div id="shorts-desc">
-                            <p>more text q2oiuopiwuqeporiqpwouie</p>
-                        </div>
-                    </section>
-                    <section class="port-section" data-index="4" data-status="inactive">
-                        <div id="shorts-container">
-                            <button id="playpause" class='play-button' onclick="playPause('filian5')"></button>
-                            <video height="600" id="filian5">
-                                <source src="assets/videos/filian/Filian_finally_caught_her_tail.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div id="shorts-desc">
-                            <p>more text q2oiuopiwuqeporiqpwouie</p>
-                        </div>
-                    </section>
-                </div>
-                <div id="business-content" class="portfolio-hidden">
                 </div>
             </div>
+            <div id="business-content" class="portfolio-hidden">
+            </div>
         </div>
+    </div>
     </div>
     <a href="#contact">
         <div class="border">
