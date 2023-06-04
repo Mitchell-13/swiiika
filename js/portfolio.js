@@ -41,6 +41,8 @@ const handleDownClick = () => {
   const currentGroup = document.querySelector(`[UD-data-index="${activeIndexUD}"]`),
     nextGroup = document.querySelector(`[UD-data-index="${nextIndex}"]`);
   activateDot(nextIndex);
+  pause(`filian${activeIndexUD}`);
+
   currentGroup.dataset.status = "below";
   nextGroup.dataset.status = "becoming-active-from-above";
 
@@ -57,6 +59,7 @@ const handleUpClick = () => {
     nextGroup = document.querySelector(`[UD-data-index="${nextIndex}"]`);
 
   activateDot(nextIndex);
+  pause(`filian${activeIndexUD}`);
   currentGroup.dataset.status = "above";
 
   nextGroup.dataset.status = "becoming-active-from-below";
@@ -117,7 +120,14 @@ $(document).ready(function () {
   });
 });
 
-
+function pause(video) {
+  var myVideo = document.getElementById(video);
+  var btn = $(".play-button")
+  if (!myVideo.paused)
+    myVideo.pause(),
+      myVideo.style.opacity = '50%',
+      btn.toggleClass("paused");
+}
 function playPause(video) {
   var myVideo = document.getElementById(video);
   if (myVideo.paused)
