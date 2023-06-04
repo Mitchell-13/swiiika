@@ -14,7 +14,7 @@ function resizeElementHeight() {
   var element = document.getElementById("clients");
 
   var box = document.querySelector(".team");
-  var height = getElementHeightWithMargin(box);
+  var height = getElementHeightWithMargin(box) + 30;
 
   // Adjust the height of the element
   element.style.height = height + "px";
