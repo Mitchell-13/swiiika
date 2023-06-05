@@ -5,13 +5,14 @@ let activeIndexLR = 0;
 const groupsLR = document.getElementsByClassName("port-section");
 
 const handleLeftClick = () => {
-  const nextIndex = activeIndexLR + 1 <= groupsLR.length - 1 ? activeIndexLR + 1 : 0;
+  const nextIndex = activeIndexLR - 1 >= 0 ? activeIndexLR - 1 : groupsLR.length - 1;
 
   const currentGroup = document.querySelector(`[data-index="${activeIndexLR}"]`),
     nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
 
   currentGroup.dataset.status = "after";
 
+  pauseAllVideos();
   nextGroup.dataset.status = "becoming-active-from-before";
 
   setTimeout(() => {
@@ -21,13 +22,14 @@ const handleLeftClick = () => {
 }
 
 const handleRightClick = () => {
-  const nextIndex = activeIndexLR - 1 >= 0 ? activeIndexLR - 1 : groupsLR.length - 1;
+  const nextIndex = activeIndexLR + 1 <= groupsLR.length - 1 ? activeIndexLR + 1 : 0;
 
   const currentGroup = document.querySelector(`[data-index="${activeIndexLR}"]`),
     nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
 
   currentGroup.dataset.status = "before";
 
+  pauseAllVideos();
   nextGroup.dataset.status = "becoming-active-from-after";
 
   setTimeout(() => {
@@ -45,7 +47,7 @@ const handleDownClick = () => {
   const currentGroup = document.querySelector(`[UD-data-index="${activeIndexUD}"]`),
     nextGroup = document.querySelector(`[UD-data-index="${nextIndex}"]`);
   activateDot(nextIndex);
-  pause(`filian${activeIndexUD}`);
+  pauseAllVideos();
 
   currentGroup.dataset.status = "below";
   nextGroup.dataset.status = "becoming-active-from-above";
@@ -65,7 +67,7 @@ const handleUpClick = () => {
     nextGroup = document.querySelector(`[UD-data-index="${nextIndex}"]`);
 
   activateDot(nextIndex);
-  pause(`filian${activeIndexUD}`);
+  pauseAllVideos();
   currentGroup.dataset.status = "above";
 
   nextGroup.dataset.status = "becoming-active-from-below";
@@ -149,24 +151,39 @@ function playPause(video) {
     myVideo.pause(),
       myVideo.style.opacity = '50%';
 }
+function pauseAllVideos() {
+  var videos = document.querySelectorAll('.shorts');
+  var btn = $(".play-button");
+  // Loop through each video element and pause it
+  for (var i = 0; i < videos.length; i++) {
+    var video = videos[i];
+    if (!video.paused)
+      video.pause(),
+        video.style.opacity = '50%',
+        btn.toggleClass("paused");
+  }
+}
 
 //show and hide the elements when hovering video
 
-var triggerElement = document.getElementById('vid-views');
+var triggerElements = document.querySelectorAll('.vid-views');
 var hiddenElements = document.getElementsByClassName('showhide');
 
-triggerElement.addEventListener('mouseenter', function () {
-  for (var i = 0; i < hiddenElements.length; i++) {
-    var hiddenElement = hiddenElements[i];
-    hiddenElement.style.opacity = '90%';
-  }
-});
+// Attach event listeners to each trigger element
+for (var i = 0; i < triggerElements.length; i++) {
+  var triggerElement = triggerElements[i];
+  triggerElement.addEventListener('mouseenter', function () {
+    for (var i = 0; i < hiddenElements.length; i++) {
+      var hiddenElement = hiddenElements[i];
+      hiddenElement.style.opacity = '90%';
+    }
+  });
 
-triggerElement.addEventListener('mouseleave', function () {
-  for (var i = 0; i < hiddenElements.length; i++) {
-    var hiddenElement = hiddenElements[i];
-    hiddenElement.style.opacity = '0%';
-  }
-});
-
+  triggerElement.addEventListener('mouseleave', function () {
+    for (var i = 0; i < hiddenElements.length; i++) {
+      var hiddenElement = hiddenElements[i];
+      hiddenElement.style.opacity = '0%';
+    }
+  });
+}
 // update the view count for video when button is pressed

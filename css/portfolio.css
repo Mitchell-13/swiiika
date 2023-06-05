@@ -170,9 +170,6 @@ button.arrow-left {
     transform: translateY(100%);
 }
 
-#influencer-content section.scroll-video[data-status="active"] {
-}
-
 #influencer-content section.scroll-video[data-status="below"] {
     transform: translateY(-100%);
 }
@@ -209,7 +206,7 @@ button.arrow-left {
 .dot-active {
     background-color: #38e4ae;
 }
-#vid-views{
+.vid-views{
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -289,6 +286,7 @@ button.arrow-left {
     background-color: white;
     max-height: 225px;
     max-width: 225px;
+    height: 20vw;
 
 }
 
