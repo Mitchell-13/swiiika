@@ -1,3 +1,5 @@
+// Left and right buttons on portfolio section
+
 let activeIndexLR = 0;
 
 const groupsLR = document.getElementsByClassName("port-section");
@@ -34,6 +36,8 @@ const handleRightClick = () => {
   });
 }
 
+// Up and Down buttons on shorts videos
+
 let activeIndexUD = 0;
 const groupsUD = document.getElementsByClassName("scroll-video");
 const handleDownClick = () => {
@@ -49,6 +53,8 @@ const handleDownClick = () => {
   setTimeout(() => {
     nextGroup.dataset.status = "active";
     activeIndexUD = nextIndex;
+    const description = nextGroup.getAttribute('data-views');
+    document.getElementById('view-count').textContent = description;
   });
 }
 
@@ -67,8 +73,12 @@ const handleUpClick = () => {
   setTimeout(() => {
     nextGroup.dataset.status = "active";
     activeIndexUD = nextIndex;
+    const description = nextGroup.getAttribute('data-views');
+    document.getElementById('view-count').textContent = description;
   });
 }
+
+//change dots for active video
 
 function activateDot(index) {
   var dots = document.getElementsByClassName('dot');
@@ -82,7 +92,7 @@ function activateDot(index) {
 }
 
 
-
+//change between influencers and businesses view
 
 document.getElementById('influencers').addEventListener('click', function () {
   var div1 = document.getElementById('influencer-content');
@@ -112,6 +122,8 @@ document.getElementById('businesses').addEventListener('click', function () {
 
 });
 
+//pause and play the video
+
 $(document).ready(function () {
   var btn = $(".play-button");
   btn.click(function () {
@@ -122,7 +134,7 @@ $(document).ready(function () {
 
 function pause(video) {
   var myVideo = document.getElementById(video);
-  var btn = $(".play-button")
+  var btn = $(".play-button");
   if (!myVideo.paused)
     myVideo.pause(),
       myVideo.style.opacity = '50%',
@@ -138,10 +150,9 @@ function playPause(video) {
       myVideo.style.opacity = '50%';
 }
 
+//show and hide the elements when hovering video
 
-
-
-var triggerElement = document.getElementById('shorts-container');
+var triggerElement = document.getElementById('vid-views');
 var hiddenElements = document.getElementsByClassName('showhide');
 
 triggerElement.addEventListener('mouseenter', function () {
@@ -157,3 +168,5 @@ triggerElement.addEventListener('mouseleave', function () {
     hiddenElement.style.opacity = '0%';
   }
 });
+
+// update the view count for video when button is pressed
