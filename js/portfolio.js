@@ -41,7 +41,7 @@ const handleRightClick = () => {
 // Up and Down buttons on shorts videos
 
 let activeIndexUD = 0;
-const groupsUD = document.getElementsByClassName("scroll-video");
+const groupsUD = document.getElementsByClassName("filian-vids");
 const handleDownClick = () => {
   const nextIndex = activeIndexUD + 1 <= groupsUD.length - 1 ? activeIndexUD + 1 : 0;
   const currentGroup = document.querySelector(`[UD-data-index="${activeIndexUD}"]`),
