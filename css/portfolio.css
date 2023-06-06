@@ -115,7 +115,7 @@ button.arrow-left {
 }
 
 #influencer-content,
-#business-content {
+#business-content{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -125,7 +125,7 @@ button.arrow-left {
     transition-duration: 0.4s;
 }
 
-#influencer-content section {
+#influencer-content section.port-section {
     position: absolute;
     display: grid;
     grid-template-columns: 40px 1fr 1.2fr 1fr;
@@ -135,6 +135,8 @@ button.arrow-left {
     padding-right: 20%;
     transition: transform 400ms ease;
 }
+
+/* Left and Right buttons */
 
 #influencer-content section.port-section[data-status="inactive"] {
     transform: translateX(-100%);
@@ -162,6 +164,30 @@ button.arrow-left {
     transition: none;
 }
 
+/* Up and down buttons on video scroller */
+
+#influencer-content section.scroll-video[data-status="inactive"] {
+    transform: translateY(100%);
+}
+
+#influencer-content section.scroll-video[data-status="below"] {
+    transform: translateY(-100%);
+}
+
+#influencer-content section.scroll-video[data-status="above"] {
+    transform: translateY(100%);
+}
+
+#influencer-content section.scroll-video[data-status="becoming-active-from-above"] {
+    transform: translateY(200%);
+    transition: none;
+}
+
+#influencer-content section.scroll-video[data-status="becoming-active-from-below"] {
+    transform: translateY(-200%);
+    transition: none;
+}
+
 .video-dots {
     display: flex;
     flex-direction: column;
@@ -180,22 +206,43 @@ button.arrow-left {
 .dot-active {
     background-color: #38e4ae;
 }
-
-.scroll-video {}
-
-#shorts-container {
+.vid-views{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+}
+#video-container{
     position: relative;
+    height: 600px;
+    width: 343px;
+    overflow: hidden;
+}
+#sections-container{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+    justify-self: end;
+    margin-right: 5px;
+    background-color: #000000;
+}
+
+.scroll-video{
+    position: absolute;
+    width: fit-content;
+    height: 600px;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
-    background-color: black;
-    justify-self: end;
-    margin-right: 5px;
+    transition: transform 400ms ease-in-out;
 }
 
-#shorts-container video {
+.scroll-video video {
     opacity: 50%;
 }
 
@@ -219,6 +266,11 @@ button.arrow-left {
     color: #38e4ae;
     font-size: 3.2vw;
 }
+#view-count{
+
+    color:white;
+    font-family:'Roboto Condensed', sans-serif;
+}
 
 .shorts-profile-picture {
     display: flex;
@@ -234,6 +286,7 @@ button.arrow-left {
     background-color: white;
     max-height: 225px;
     max-width: 225px;
+    height: 20vw;
 
 }
 
@@ -272,7 +325,7 @@ button.arrow-left {
     position: absolute;
     width: 100%;
     height: 40px;
-    z-index: 3;
+    z-index: 20;
     justify-content: center;
     transition-duration: 0.2s;
     opacity: 0%;
@@ -295,6 +348,7 @@ button.arrow-left {
     border: none;
     background-color: transparent;
     font-size: 20px;
+    cursor: pointer;
 
 }
 
@@ -303,6 +357,7 @@ button.arrow-left {
     border: none;
     background-color: transparent;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .bounce-right {
