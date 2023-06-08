@@ -406,6 +406,9 @@
                     <label for="name-input">Name: <span style="color:red">*</span></label>
                     <input type="text" id="name-input" name="name" required><br><br>
 
+                    <label for="subject">Subject: <span style="color:red">*</span></label>
+                    <input type="subject" id="subject" name="subject" required><br><br>
+
                     <label for="email">Email: <span style="color:red">*</span></label>
                     <input type="email" id="email" name="email" required><br><br>
 

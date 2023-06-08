@@ -254,6 +254,7 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="subject"],
 textarea {
     max-width: 100%;
     min-width: 100%;
