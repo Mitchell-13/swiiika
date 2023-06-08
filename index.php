@@ -50,13 +50,10 @@
             <div id="container1">
                 <img id="name" src="assets/images/Swiiika_website_header.png" alt="">
                 <div id="socials">
-                    <a href="https://discordapp.com/users/707445225559425096" target="_blank"><i
-                            class="fa-brands fa-discord"></i></a>
+                    <a href="https://discordapp.com/users/707445225559425096" target="_blank"><i class="fa-brands fa-discord"></i></a>
                     <a href="https://twitter.com/Swiiika_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.tiktok.com/@swiiika?lang=en" target="_blank"><i
-                            class="fa-brands fa-tiktok"></i></a>
-                    <a href="https://www.youtube.com/channel/UCmB_ZdiFYmJUy9vEsCv55mA" target="_blank"><i
-                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@swiiika?lang=en" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/channel/UCmB_ZdiFYmJUy9vEsCv55mA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     <a href="https://www.twitch.tv/swiiika" target="_blank"><i class="fa-brands fa-twitch"></i></a>
                 </div>
             </div>
@@ -103,8 +100,7 @@
                 <img src="assets/images/clients/Megalodon.png" alt="" /><span class="name name2">megalodonvt</span>
             </a>
             <a href="https://www.twitch.tv/projektmelody" target="_blank" class="profile">
-                <img src="assets/images/clients/projektmelody.png" alt="" /><span
-                    class="name name2">ProjektMelody</span>
+                <img src="assets/images/clients/projektmelody.png" alt="" /><span class="name name2">ProjektMelody</span>
             </a>
             <a href="https://www.twitch.tv/quqco" target="_blank" class="profile">
                 <img src="assets/images/clients/quqco.png" alt="" /><span class="name name2">quqco</span>
@@ -130,16 +126,14 @@
         </div>
     </a>
     <div id="portfolio">
-        <div id="portfolio-bg" class="jarallax" data-jarallax data-jarallax-video="https://vimeo.com/826404982">
+        <div id="portfolio-bg" class="jarallax" data-jarallax-video="https://vimeo.com/826404982">
             <div id="portfolio-buttons">
                 <div class="btn from-right selected" id="influencers">Influencers</div>
                 <span></span>
                 <div class="btn from-left" id="businesses">Businesses</div>
             </div>
-            <button class="arrow-right" type="button" onclick="handleRightClick()"><i
-                    class="fa-solid fa-arrow-right bounce-right"></i></button>
-            <button class="arrow-left" type="button" onclick="handleLeftClick()"><i
-                    class="fa-solid fa-arrow-left bounce-left"></i></button>
+            <button class="arrow-right" type="button" onclick="handleRightClick()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
+            <button class="arrow-left" type="button" onclick="handleLeftClick()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
             <div id="portfolio-content">
                 <div id="influencer-content" class="">
                     <section class="port-section" data-index="0" data-status="active">
@@ -156,56 +150,37 @@
                                     <div class="top-bar showhide"><button class="arrow-up" onclick="handleUpClick()">
                                             <i class="fa-solid fa-angle-up"></i></button>
                                     </div>
-                                    <div class="bottom-bar showhide"><button class="arrow-down"
-                                            onclick="handleDownClick()">
+                                    <div class="bottom-bar showhide"><button class="arrow-down" onclick="handleDownClick()">
                                             <i class="fa-solid fa-angle-down"></i></button>
                                     </div>
-                                    <section class="scroll-video filian-vids" UD-data-index="0" data-status="active"
-                                        data-views="750,000+ Views">
-                                        <button id="playpause" class='play-button showhide'
-                                            onclick="playPause('filian0')"></button>
+                                    <section class="scroll-video filian-vids" UD-data-index="0" data-status="active" data-views="750,000+ Views">
+                                        <button id="playpause" class='play-button showhide' onclick="playPause('filian0')"></button>
                                         <video class="shorts" height="600" id="filian0" preload="metadata" loop>
-                                            <source src="assets/videos/filian/Filian_slices_natasha_V2.mp4#t=0.001"
-                                                type="video/mp4">
+                                            <source src="assets/videos/filian/Filian_slices_natasha_V2.mp4#t=0.001" type="video/mp4">
                                         </video>
                                     </section>
-                                    <section class="scroll-video filian-vids" UD-data-index="1" data-status="inactive"
-                                        data-views="24,000,000+ Views">
-                                        <button id="playpause" class='play-button showhide'
-                                            onclick="playPause('filian1')"></button>
+                                    <section class="scroll-video filian-vids" UD-data-index="1" data-status="inactive" data-views="24,000,000+ Views">
+                                        <button id="playpause" class='play-button showhide' onclick="playPause('filian1')"></button>
                                         <video class="shorts" height="600" id="filian1" preload="metadata" loop>
-                                            <source src="assets/videos/filian/Filian_Omegle_Reactions_2.mp4#t=0.001"
-                                                type="video/mp4">
+                                            <source src="assets/videos/filian/Filian_Omegle_Reactions_2.mp4#t=0.001" type="video/mp4">
                                         </video>
                                     </section>
-                                    <section class="scroll-video filian-vids" UD-data-index="2" data-status="inactive"
-                                        data-views="8,200,000+ Views">
-                                        <button id="playpause" class='play-button showhide'
-                                            onclick="playPause('filian2')"></button>
+                                    <section class="scroll-video filian-vids" UD-data-index="2" data-status="inactive" data-views="8,200,000+ Views">
+                                        <button id="playpause" class='play-button showhide' onclick="playPause('filian2')"></button>
                                         <video class="shorts" height="600" id="filian2" preload="metadata" loop>
-                                            <source
-                                                src="assets/videos/filian/Filian_gets_splattered_by_miz_V2.mp4#t=0.001"
-                                                type="video/mp4">
+                                            <source src="assets/videos/filian/Filian_gets_splattered_by_miz_V2.mp4#t=0.001" type="video/mp4">
                                         </video>
                                     </section>
-                                    <section class="scroll-video filian-vids" UD-data-index="3" data-status="inactive"
-                                        data-views="10,000,000+ Views">
-                                        <button id="playpause" class='play-button showhide'
-                                            onclick="playPause('filian3')"></button>
+                                    <section class="scroll-video filian-vids" UD-data-index="3" data-status="inactive" data-views="10,000,000+ Views">
+                                        <button id="playpause" class='play-button showhide' onclick="playPause('filian3')"></button>
                                         <video class="shorts" height="600" id="filian3" preload="metadata" loop>
-                                            <source
-                                                src="assets/videos/filian/Filian_proves_shes_an_anime_girl_on_omegleV2.mp4#t=0.001"
-                                                type="video/mp4">
+                                            <source src="assets/videos/filian/Filian_proves_shes_an_anime_girl_on_omegleV2.mp4#t=0.001" type="video/mp4">
                                         </video>
                                     </section>
-                                    <section class="scroll-video filian-vids" UD-data-index="4" data-status="inactive"
-                                        data-views="4,400,000+ Views">
-                                        <button id="playpause" class='play-button showhide'
-                                            onclick="playPause('filian4')"></button>
+                                    <section class="scroll-video filian-vids" UD-data-index="4" data-status="inactive" data-views="4,400,000+ Views">
+                                        <button id="playpause" class='play-button showhide' onclick="playPause('filian4')"></button>
                                         <video class="shorts" height="600" id="filian4" preload="metadata" loop>
-                                            <source
-                                                src="assets/videos/filian/Filian_finally_caught_her_tail.mp4#t=0.001"
-                                                type="video/mp4">
+                                            <source src="assets/videos/filian/Filian_finally_caught_her_tail.mp4#t=0.001" type="video/mp4">
                                         </video>
                                     </section>
 
@@ -219,8 +194,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p>
                         </div>
-                        <div class="shorts-profile-picture"><img src="assets/images/clients/filian.png"
-                                alt="filian profile picture"></div>
+                        <div class="shorts-profile-picture"><img src="assets/images/clients/filian.png" alt="filian profile picture"></div>
 
                     </section>
                     <section class="port-section" data-index="1" data-status="inactive">
@@ -229,13 +203,10 @@
                         <div class="vid-views">
                             <div id="video-container">
                                 <div id="sections-container">
-                                    <section class="scroll-video" UD-data-index="0" data-status="active"
-                                        data-views="100,000+ Views">
-                                        <button id="playpause" class='play-button showhide'
-                                            onclick="playPause('fallenshadow0')"></button>
+                                    <section class="scroll-video" UD-data-index="0" data-status="active" data-views="100,000+ Views">
+                                        <button id="playpause" class='play-button showhide' onclick="playPause('fallenshadow0')"></button>
                                         <video class="shorts" height="600" id="fallenshadow0" preload="metadata" loop>
-                                            <source src="assets/videos/fallen shadow/Shadow_for_president.mp4#t=0.001"
-                                                type="video/mp4">
+                                            <source src="assets/videos/fallen shadow/Shadow_for_president.mp4#t=0.001" type="video/mp4">
                                         </video>
                                     </section>
                                 </div>
@@ -248,8 +219,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p>
                         </div>
-                        <div class="shorts-profile-picture"><img src="assets/images/clients/fallenshadow.png"
-                                alt="fallenshadow profile picture"></div>
+                        <div class="shorts-profile-picture"><img src="assets/images/clients/fallenshadow.png" alt="fallenshadow profile picture"></div>
 
                     </section>
                     <section class="port-section" data-index="2" data-status="inactive">
@@ -258,14 +228,10 @@
                         <div class="vid-views">
                             <div id="video-container">
                                 <div id="sections-container">
-                                    <section class="scroll-video" UD-data-index="0" data-status="active"
-                                        data-views="400,000+ Views">
-                                        <button id="playpause" class='play-button showhide'
-                                            onclick="playPause('projektm0')"></button>
+                                    <section class="scroll-video" UD-data-index="0" data-status="active" data-views="400,000+ Views">
+                                        <button id="playpause" class='play-button showhide' onclick="playPause('projektm0')"></button>
                                         <video class="shorts" height="600" id="projektm0" preload="metadata" loop>
-                                            <source
-                                                src="assets/videos/projekt melody/Melody_gets_roasted_by_Charlie.mp4#t=0.001"
-                                                type="video/mp4">
+                                            <source src="assets/videos/projekt melody/Melody_gets_roasted_by_Charlie.mp4#t=0.001" type="video/mp4">
                                         </video>
                                     </section>
                                 </div>
@@ -278,8 +244,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p>
                         </div>
-                        <div class="shorts-profile-picture"><img src="assets/images/clients/projektmelody.png"
-                                alt="fallenshadow profile picture"></div>
+                        <div class="shorts-profile-picture"><img src="assets/images/clients/projektmelody.png" alt="fallenshadow profile picture"></div>
 
                     </section>
                     <section class="port-section" data-index="3" data-status="inactive">
@@ -288,13 +253,10 @@
                         <div class="vid-views">
                             <div id="video-container">
                                 <div id="sections-container">
-                                    <section class="scroll-video" UD-data-index="0" data-status="active"
-                                        data-views="400,000+ Views">
-                                        <button id="playpause" class='play-button showhide'
-                                            onclick="playPause('quqco0')"></button>
+                                    <section class="scroll-video" UD-data-index="0" data-status="active" data-views="400,000+ Views">
+                                        <button id="playpause" class='play-button showhide' onclick="playPause('quqco0')"></button>
                                         <video class="shorts" height="600" id="quqco0" preload="metadata" loop>
-                                            <source src="assets/videos/quqco/Quqcos_painting_fights_back.mp4"
-                                                type="video/mp4">
+                                            <source src="assets/videos/quqco/Quqcos_painting_fights_back.mp4" type="video/mp4">
                                         </video>
                                     </section>
                                 </div>
@@ -307,8 +269,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua.</p>
                         </div>
-                        <div class="shorts-profile-picture"><img src="assets/images/clients/quqco.png"
-                                alt="quqco profile picture"></div>
+                        <div class="shorts-profile-picture"><img src="assets/images/clients/quqco.png" alt="quqco profile picture"></div>
 
                     </section>
                 </div>
@@ -342,7 +303,7 @@
                     <td>
                         <ul>
                             <li>I'll search VODs & clips on your channel to find content that would perform well on
-                                short-from social sites</li>
+                                short-form social sites</li>
                             <li>I'll schedule, manage & post edited content on your socials with proper titles and tags
                             </li>
                             <li>Includes Full Edit &lpar;Listed in the "Edit Only" package&rpar;</li>
@@ -355,7 +316,7 @@
                     <td>
                         <ul>
                             <li>I'll search VODs & clips on your channel to find content that would perform well on
-                                short-from social sites</li>
+                                short-form social sites</li>
                             <li>Includes Full Edit &lpar;Listed in the "Edit Only" package&rpar;</li>
                         </ul>
                     </td>
@@ -398,11 +359,11 @@
     <div id="modal" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
             <div class="modal">
-                <span onclick="document.getElementById('modal').style.display='none'; clearForm()" 
-                    class="w3-button w3-display-topright">&times;</span>
+                <span onclick="document.getElementById('modal').style.display='none'; clearForm()" class="w3-button w3-display-topright">&times;</span>
 
                 <p>Contact Me</p>
                 <form action="" method="post" enctype="text/plain">
+
                     <label for="name-input">Name: <span style="color:red">*</span></label>
                     <input type="text" id="name-input" name="name" required><br><br>
 
@@ -415,6 +376,8 @@
                     <label for="message">Message: <span style="color:red">*</span></label>
                     <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
 
+
+                    <input type="hidden" name="action" value="send" />
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -423,16 +386,16 @@
     <footer id="footer">
         <img src="assets/images/logo.png" alt="Swiiika Logo">
         <div id="socials">
-            <a href="https://discordapp.com/users/707445225559425096" target="_blank"><i
-                    class="fa-brands fa-discord"></i></a>
+            <a href="https://discordapp.com/users/707445225559425096" target="_blank"><i class="fa-brands fa-discord"></i></a>
             <a href="https://twitter.com/Swiiika_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.tiktok.com/@swiiika?lang=en" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://www.youtube.com/channel/UCmB_ZdiFYmJUy9vEsCv55mA" target="_blank"><i
-                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.youtube.com/channel/UCmB_ZdiFYmJUy9vEsCv55mA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.twitch.tv/swiiika" target="_blank"><i class="fa-brands fa-twitch"></i></a>
         </div>
         <a href="mailto:business@swiiika.com">business@swiiika.com</a>
-        <p>&copy; <?php echo date("Y"); ?> Swiiika</p>
+        <p>&copy;
+            <?php echo date("Y"); ?> Swiiika
+        </p>
     </footer>
 
 </body>

@@ -184,7 +184,8 @@ footer {
 footer img {
     max-width: 200px;
     justify-self: center;
-    padding: 10px
+    padding: 10px;
+    transform: rotatez(10deg)
 }
 
 footer a:link {
