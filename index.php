@@ -12,6 +12,7 @@
     <link href="css/menu.css" rel="stylesheet">
     <link href="css/clients.css" rel="stylesheet">
     <link href="css/pricing.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/portfolio.css" rel="stylesheet">
     <link href="css/about.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/para.css">
@@ -362,8 +363,25 @@
         <a href="mailto:business@swiiika.com">business@swiiika.com</a>
         <p>&copy; Swiiika</p>
     </footer>
-    <div id="contact-popout">
+    <div id="contact-popout" class="pulse" onclick="document.getElementById('43').style.display='block'">
         Contact Me
+    </div>
+    <div id="43" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+            <div class="modal">
+                <span onclick="document.getElementById('43').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+
+                <h1>Contact Me</h1>
+                <hr>
+                Name:
+                <br>
+                Email Address:
+                <br>
+                Message:
+                <br>
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 

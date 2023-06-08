@@ -196,11 +196,32 @@ footer p{
     right: 0;
     top:50%;
     z-index: 20;
-    background-color: #38e4ae;
+    background-color: rgb(56, 228, 174);
     border:2px solid #0e0e0e;
     writing-mode: vertical-lr;
     padding: 5px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    font-family: "roboto condesnsed", sans-serif;
+    font-family: "roboto condensed", sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
 }
+
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+  }
+  
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(56, 228, 174, 0.192);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(56, 228, 174, 0);
+    }
+  }
+  
+  .modal{
+    background-color: #1b1b1b;
+    color: rgb(252, 252, 252);
+  }
