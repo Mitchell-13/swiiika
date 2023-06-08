@@ -171,7 +171,7 @@ body {
 
 footer{
     background-color: #0e0e0e;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
