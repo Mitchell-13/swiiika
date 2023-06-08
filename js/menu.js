@@ -62,3 +62,10 @@ function menuOnClick() {
       }
     });
   });
+
+
+  function clearForm() {
+    document.getElementById("name-input").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+  }

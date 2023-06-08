@@ -13,7 +13,7 @@ body {
 }
 
 @media screen and (max-width: 760px) {
-    
+
 
     .border-text {
         color: white;
@@ -102,11 +102,13 @@ body {
     color: var(--def);
     transition-delay: .5s;
 }
-.selected{
+
+.selected {
     color: var(--def);
     background: var(--inv);
     transition: none;
 }
+
 .btn:hover:before {
     transition-delay: 0s;
 }
@@ -169,35 +171,39 @@ body {
     box-sizing: border-box;
 }
 
-footer{
+footer {
     background-color: #0e0e0e;
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding:40px;
+    padding: 40px;
 }
-footer img{
+
+footer img {
     max-width: 200px;
     justify-self: center;
-    padding:10px
+    padding: 10px
 }
-footer a:link{
-    color:#38e4ae;
+
+footer a:link {
+    color: #38e4ae;
     font-family: "roboto condensed", sans-serif;
     text-decoration: none;
 }
-footer p{
+
+footer p {
     color: #b4b4b4;
 }
-#contact-popout{
+
+#contact-popout {
     position: fixed;
     right: 0;
-    top:50%;
+    top: 50%;
     z-index: 20;
     background-color: rgb(56, 228, 174);
-    border:2px solid #0e0e0e;
+    border: 2px solid #0e0e0e;
     writing-mode: vertical-lr;
     padding: 5px;
     border-top-left-radius: 10px;
@@ -210,18 +216,60 @@ footer p{
 
 .pulse {
     animation: pulse-animation 2s infinite;
-  }
-  
-  @keyframes pulse-animation {
+}
+
+@keyframes pulse-animation {
     0% {
-      box-shadow: 0 0 0 0px rgba(56, 228, 174, 0.192);
+        box-shadow: 0 0 0 0px rgba(56, 228, 174, 0.192);
     }
+
     100% {
-      box-shadow: 0 0 0 20px rgba(56, 228, 174, 0);
+        box-shadow: 0 0 0 20px rgba(56, 228, 174, 0);
     }
-  }
-  
-  .modal{
+}
+
+
+.modal {
     background-color: #1b1b1b;
     color: rgb(252, 252, 252);
-  }
+    padding: 3%;
+    width: 100%;
+    z-index: 15;
+    font-family: "roboto condensed", sans-serif;
+}
+.modal p{
+    font-size: 35px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width:100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
