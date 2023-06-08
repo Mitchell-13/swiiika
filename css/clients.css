@@ -5,19 +5,23 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
         justify-items: center;
     }
+
     .container a:last-child {
         grid-column: 2;
     }
-    .team{
-        margin-bottom:10px;
-    }
-.profile img{
 
-    width: 25vw;
-}
-.section-heading{
-    display: none;
-}
+    #clients {
+        padding-bottom: 150px;
+    }
+
+    .profile img {
+
+        width: 25vw;
+    }
+
+    .section-heading {
+        display: none;
+    }
 }
 
 @media screen and (min-width:760px) {
@@ -30,9 +34,9 @@
         margin: 0 auto;
         align-content: center;
     }
-    .team{
 
-    margin-bottom: 150px;
+    #clients {
+        padding-bottom: 150px;
     }
 
     .profile:hover {
@@ -49,10 +53,12 @@
         left: 50%;
         transform: translate(-50%, -50%) rotate(45deg);
     }
-.profile img{
 
-    width: 10vw;
-}
+    .profile img {
+
+        width: 10vw;
+    }
+
     .profile img:hover+.name {
         opacity: 1;
         transform: translateX(-50%);
@@ -68,45 +74,32 @@
 #clients {
     scroll-margin-top: 100px;
     margin: 0;
-    width: 100%;
-    padding-bottom: 60;
+    min-width: 100%;
     display: flex;
     justify-content: center;
-    background-color: black;
-    height: 500px;
-}
-
-#client-bg {
-    position: absolute;
-    background-color: black;
-    width: 100%;
-overflow: hidden;
-}
-
-#VideoWorker-1 {
-    opacity: 35%;
-}
-
-.team {
     height: fit-content;
-    display: flex;
     flex-direction: column;
     padding-top: 100px;
+    background-image: url(/assets/images/Screenshot\ 2023-06-07\ 182700.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.team p {
+#clients p {
     color: white;
     font-size: 1.5rem;
     font-family: "Roboto Condensed";
+    text-shadow: 2px 2px #000;
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
     padding: 20px;
-    padding-bottom:110px;
+    margin-bottom: 110px;
     border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.575);
 }
 
-.team p span {
+#clients p span {
     font-size: 2rem;
     font-weight: bold;
     line-height: 10px;
@@ -121,7 +114,7 @@ overflow: hidden;
 
 .profile img {
     border-radius: 50%;
-    border: 3px solid #000000;
+    border: 3px solid #0e0e0e;
     filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
     background-color: white;
     cursor: pointer;

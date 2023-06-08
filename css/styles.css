@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     width: 100%;
+    background-color: black;
 }
 
 body {
@@ -51,7 +52,7 @@ body {
 
 
 .border {
-    background-color: black;
+    background-color: #0e0e0e;
     height: 10px;
     width: 100%;
     overflow: visible;
@@ -166,4 +167,40 @@ body {
 *:before,
 *:after {
     box-sizing: border-box;
+}
+
+footer{
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding:40px;
+}
+footer img{
+    max-width: 200px;
+    justify-self: center;
+    padding:10px
+}
+footer a:link{
+    color:#38e4ae;
+    font-family: "roboto condensed", sans-serif;
+    text-decoration: none;
+}
+footer p{
+    color: #b4b4b4;
+}
+#contact-popout{
+    position: fixed;
+    right: 0;
+    top:50%;
+    z-index: 20;
+    background-color: #38e4ae;
+    border:2px solid #0e0e0e;
+    writing-mode: vertical-lr;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: "roboto condesnsed", sans-serif;
 }

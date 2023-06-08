@@ -18,7 +18,7 @@ const handleLeftClick = () => {
   setTimeout(() => {
     nextGroup.dataset.status = "active";
     activeIndexLR = nextIndex;
-  });
+  }, 50);
 }
 
 const handleRightClick = () => {
@@ -35,7 +35,7 @@ const handleRightClick = () => {
   setTimeout(() => {
     nextGroup.dataset.status = "active";
     activeIndexLR = nextIndex;
-  });
+  }, 50);
 }
 
 // Up and Down buttons on shorts videos
@@ -57,7 +57,7 @@ const handleDownClick = () => {
     activeIndexUD = nextIndex;
     const description = nextGroup.getAttribute('data-views');
     document.getElementById('view-count').textContent = description;
-  });
+  }, 50);
 }
 
 const handleUpClick = () => {
@@ -77,7 +77,7 @@ const handleUpClick = () => {
     activeIndexUD = nextIndex;
     const description = nextGroup.getAttribute('data-views');
     document.getElementById('view-count').textContent = description;
-  });
+  }, 50);
 }
 
 //change dots for active video
@@ -186,4 +186,3 @@ for (var i = 0; i < triggerElements.length; i++) {
     }
   });
 }
-// update the view count for video when button is pressed

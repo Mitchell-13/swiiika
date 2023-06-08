@@ -1,0 +1,95 @@
+#pricing {
+    height: 1000px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#blur-bg {
+    background-image: url(/assets/images/Screenshot\ 2023-06-07\ 182700.png);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: inherit;
+    width: 100%;
+    opacity: 80%;
+}
+
+#pricing-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "roboto condensed", sans-serif;
+    width: 100%;
+    font-size: 1.5rem;
+
+}
+
+#pricing-content img {
+    width: 250px;
+    align-self: flex-end;
+}
+
+#table-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#line {
+    background-color: #0e0e0e;
+    height: 65px;
+    width: 4px;
+    justify-self: center;
+    margin: 10px;
+}
+
+
+table,
+td {
+    border: 3px solid white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    border: none;
+    border-top:none;
+}
+th{
+    font-size: 40px;
+    text-align: start;
+}
+table td:first-child{
+    font-size: 40px;
+    text-align: start;
+    font-weight: bold;
+    padding-left: 20px;
+}
+#pricing-table td:last-child {
+    min-width: 220px;
+    font-size: 40px;
+    padding-left: 20px;
+
+}
+.sub-text{
+    font-size: 15px;
+}
+#pricing-table .red {
+    color: rgb(223, 99, 99);
+    padding-left: 50px;
+}
