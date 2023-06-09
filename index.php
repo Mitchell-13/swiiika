@@ -278,7 +278,7 @@
                 <button class="arrow-right" type="button" onclick="handleRightClickbiz()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
                 <button class="arrow-left" type="button" onclick="handleLeftClickbiz()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
 
-                <section class="port-section-biz" data-indexbiz="0" data-status="active">
+                <!--<section class="port-section-biz" data-indexbiz="0" data-status="active">
                     <div class="video-dots">
                         <div class="dot dot-0 dot-active"></div>
                         <div class="dot dot-1"></div>
@@ -295,31 +295,31 @@
                                 <div class="bottom-bar showhide"><button class="arrow-down" onclick="handleDownClick()">
                                         <i class="fa-solid fa-angle-down"></i></button>
                                 </div>
-                                <section class="scroll-video filian-vids" UD-data-index="0" data-status="active" data-views="750,000+ Views">
+                                <section class="scroll-video filian-vids" biz-data-index="0" data-status="active" data-views="750,000+ Views">
                                     <button id="playpause" class='play-button showhide' onclick="playPause('filian0')"></button>
                                     <video class="shorts" height="600" id="filian0" preload="metadata" loop>
                                         <source src="assets/videos/filian/Filian_slices_natasha_V2.mp4#t=0.001" type="video/mp4">
                                     </video>
                                 </section>
-                                <section class="scroll-video filian-vids" UD-data-index="1" data-status="inactive" data-views="24,000,000+ Views">
+                                <section class="scroll-video filian-vids" biz-data-index="1" data-status="inactive" data-views="24,000,000+ Views">
                                     <button id="playpause" class='play-button showhide' onclick="playPause('filian1')"></button>
                                     <video class="shorts" height="600" id="filian1" preload="metadata" loop>
                                         <source src="assets/videos/filian/Filian_Omegle_Reactions_2.mp4#t=0.001" type="video/mp4">
                                     </video>
                                 </section>
-                                <section class="scroll-video filian-vids" UD-data-index="2" data-status="inactive" data-views="8,200,000+ Views">
+                                <section class="scroll-video filian-vids" biz-data-index="2" data-status="inactive" data-views="8,200,000+ Views">
                                     <button id="playpause" class='play-button showhide' onclick="playPause('filian2')"></button>
                                     <video class="shorts" height="600" id="filian2" preload="metadata" loop>
                                         <source src="assets/videos/filian/Filian_gets_splattered_by_miz_V2.mp4#t=0.001" type="video/mp4">
                                     </video>
                                 </section>
-                                <section class="scroll-video filian-vids" UD-data-index="3" data-status="inactive" data-views="10,000,000+ Views">
+                                <section class="scroll-video filian-vids" biz-data-index="3" data-status="inactive" data-views="10,000,000+ Views">
                                     <button id="playpause" class='play-button showhide' onclick="playPause('filian3')"></button>
                                     <video class="shorts" height="600" id="filian3" preload="metadata" loop>
                                         <source src="assets/videos/filian/Filian_proves_shes_an_anime_girl_on_omegleV2.mp4#t=0.001" type="video/mp4">
                                     </video>
                                 </section>
-                                <section class="scroll-video filian-vids" UD-data-index="4" data-status="inactive" data-views="4,400,000+ Views">
+                                <section class="scroll-video filian-vids" biz-data-index="4" data-status="inactive" data-views="4,400,000+ Views">
                                     <button id="playpause" class='play-button showhide' onclick="playPause('filian4')"></button>
                                     <video class="shorts" height="600" id="filian4" preload="metadata" loop>
                                         <source src="assets/videos/filian/Filian_finally_caught_her_tail.mp4#t=0.001" type="video/mp4">
@@ -338,7 +338,7 @@
                     </div>
                     <div class="shorts-profile-picture"><img src="assets/images/clients/filian.png" alt="filian profile picture"></div>
 
-                </section>
+                </section>-->
             </div>
         </div>
     </div>
