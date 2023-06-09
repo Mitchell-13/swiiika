@@ -1,4 +1,4 @@
-// Left and right buttons on portfolio section
+// Left and right buttons on influencer portfolio section
 
 let activeIndexLR = 0;
 
@@ -38,6 +38,44 @@ const handleRightClick = () => {
   }, 50);
 }
 
+//left and right buttons on business portfolio section
+let activeIndexbiz = 0;
+
+const groupsbiz = document.getElementsByClassName("port-section-biz");
+
+const handleLeftClickbiz = () => {
+  const nextIndex = activeIndexbiz - 1 >= 0 ? activeIndexbiz - 1 : groupsbiz.length - 1;
+
+  const currentGroup = document.querySelector(`[data-indexbiz="${activeIndexbiz}"]`),
+    nextGroup = document.querySelector(`[data-indexbiz="${nextIndex}"]`);
+
+  currentGroup.dataset.status = "after";
+
+  pauseAllVideos();
+  nextGroup.dataset.status = "becoming-active-from-before";
+
+  setTimeout(() => {
+    nextGroup.dataset.status = "active";
+    activeIndexbiz = nextIndex;
+  }, 50);
+}
+
+const handleRightClickbiz = () => {
+  const nextIndex = activeIndexbiz + 1 <= groupsbiz.length - 1 ? activeIndexbiz + 1 : 0;
+
+  const currentGroup = document.querySelector(`[data-indexbiz="${activeIndexbiz}"]`),
+    nextGroup = document.querySelector(`[data-indexbiz="${nextIndex}"]`);
+
+  currentGroup.dataset.status = "before";
+
+  pauseAllVideos();
+  nextGroup.dataset.status = "becoming-active-from-after";
+
+  setTimeout(() => {
+    nextGroup.dataset.status = "active";
+    activeIndexbiz = nextIndex;
+  }, 50);
+}
 // Up and Down buttons on shorts videos
 
 let activeIndexUD = 0;
