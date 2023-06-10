@@ -117,9 +117,6 @@ button.arrow-left {
 #influencer-content,
 #business-content{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     width: 100%;
     transition-duration: 0.4s;

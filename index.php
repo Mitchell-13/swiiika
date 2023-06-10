@@ -274,7 +274,7 @@
                     </section>
                 </div>
             </div>
-            <div id="business-content" class="portfolio-hidden">
+            <div id="business-content" class="portfolio-hidden" style="display:none">
                 <button class="arrow-right" type="button" onclick="handleRightClickbiz()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
                 <button class="arrow-left" type="button" onclick="handleLeftClickbiz()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
 
