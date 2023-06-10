@@ -116,7 +116,7 @@
         </div>
         <a href="mailto:business@swiiika.com">business@swiiika.com</a>
         <p>&copy;
-            <?php echo date("Y"); ?> Swiiika | <a href="privacy.html">Privacy Policy</a>
+            <?php echo date("Y"); ?> Swiiika | <a href="privacy.php">Privacy Policy</a>
         </p>
 
     </footer>
