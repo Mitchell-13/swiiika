@@ -204,7 +204,6 @@ footer p {
     top: 50%;
     z-index: 20;
     background-color: rgb(56, 228, 174);
-    border: 2px solid #0e0e0e;
     writing-mode: vertical-lr;
     padding: 5px;
     border-top-left-radius: 10px;
@@ -275,3 +274,77 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#aboutme{
+    background-color: black;
+background: linear-gradient(241deg, #118d59 , #b14040);
+background-size: 400% 400%;
+height: 75vh;
+width: 100%;
+
+-webkit-animation: gradient-bg 10s ease infinite;
+-moz-animation: gradient-bg 10s ease infinite;
+animation: gradient-bg 10s ease infinite;
+}
+
+@-webkit-keyframes gradient-bg {
+0%{background-position:93% 0%}
+50%{background-position:0% 100%}
+100%{background-position:93% 0%}
+}
+@-moz-keyframes gradient-bg {
+0%{background-position:93% 0%}
+50%{background-position:0% 100%}
+100%{background-position:93% 0%}
+}
+@keyframes gradient-bg {
+0%{background-position:93% 0%}
+50%{background-position:0% 100%}
+100%{background-position:93% 0%}
+}
+
+#aboutme-content{
+    padding-left: 5%;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    position: relative;
+}
+#aboutme-content img{
+    height: 90%;
+    align-self: flex-end;
+
+}
+#aboutme-text{
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 10%;
+    color:white;
+    font-family: "roboto condensed", sans-serif;
+    font-size: 1.5em;
+}
+#aboutme-text h1{
+    font-size: 4em;
+}
+
+.scroll-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .scroll-visible {
+    opacity: 1;
+  }

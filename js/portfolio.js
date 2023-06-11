@@ -38,7 +38,7 @@ const handleRightClick = () => {
   }, 50);
 }
 
-//left and right buttons on business portfolio section
+/* left and right buttons on business portfolio section
 let activeIndexbiz = 0;
 
 const groupsbiz = document.getElementsByClassName("port-section-biz");
@@ -76,6 +76,8 @@ const handleRightClickbiz = () => {
     activeIndexbiz = nextIndex;
   }, 50);
 }
+*/
+
 // Up and Down buttons on shorts videos
 
 let activeIndexUD = 0;
@@ -133,7 +135,7 @@ function activateDot(index) {
 
 
 //change between influencers and businesses view
-
+/*
 document.getElementById('influencers').addEventListener('click', function () {
   var div1 = document.getElementById('influencer-content');
   var div2 = document.getElementById('business-content');
@@ -161,7 +163,7 @@ document.getElementById('businesses').addEventListener('click', function () {
   }, 500);
 
 });
-
+*/
 //pause and play the video
 
 $(document).ready(function () {

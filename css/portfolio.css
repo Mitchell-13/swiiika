@@ -52,20 +52,33 @@
 }
 
 #portfolio {
-    height: 1000px;
+    height: 100vh;
     background-color: rgb(0, 0, 0);
     scroll-margin-top: 100px;
-    z-index: 1;
+    background-image: url(/assets/images/blurbg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
 }
 
-#portfolio-bg {
+#portfolio-content {
+    height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-#portfolio-bg .arrow-right {
+#portfolio-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#portfolio-content .arrow-right {
     color: white;
     font-size: 2vw;
     border: none;
@@ -80,7 +93,7 @@
     z-index: 10;
 }
 
-#portfolio-bg .arrow-left {
+#portfolio-content .arrow-left {
     color: white;
     font-size: 2vw;
     border: none;
@@ -95,34 +108,18 @@
     z-index: 10;
 }
 
-#portfolio-bg button.arrow-right,
+#portfolio-content button.arrow-right,
 button.arrow-left {
     height: 70px;
     width: 70px;
 }
 
-#portfolio-content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
 
 .portfolio-hidden {
     opacity: 0%;
 }
 
-#influencer-content,
-#business-content{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transition-duration: 0.4s;
-}
-
-#influencer-content section.port-section {
+#portfolio-content section.port-section {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -132,56 +129,57 @@ button.arrow-left {
     padding-left: 20%;
     padding-right: 20%;
     transition: transform 400ms ease;
+    height: fit-content;
 }
 
 /* Left and Right buttons */
 
-#influencer-content section.port-section[data-status="inactive"] {
+#portfolio-content section.port-section[data-status="inactive"] {
     transform: translateX(-100%);
 }
 
-#influencer-content section.port-section[data-status="active"] {
+#portfolio-content section.port-section[data-status="active"] {
     transition-delay: 300ms;
 }
 
-#influencer-content section.port-section[data-status="after"] {
+#portfolio-content section.port-section[data-status="after"] {
     transform: translateX(100%);
 }
 
-#influencer-content section.port-section[data-status="before"] {
+#portfolio-content section.port-section[data-status="before"] {
     transform: translateX(-100%);
 }
 
-#influencer-content section.port-section[data-status="becoming-active-from-before"] {
+#portfolio-content section.port-section[data-status="becoming-active-from-before"] {
     transform: translateX(-200%);
     transition: none;
 }
 
-#influencer-content section.port-section[data-status="becoming-active-from-after"] {
+#portfolio-content section.port-section[data-status="becoming-active-from-after"] {
     transform: translateX(200%);
     transition: none;
 }
 
 /* Up and down buttons on video scroller */
 
-#influencer-content section.scroll-video[data-status="inactive"] {
+#portfolio-content section.scroll-video[data-status="inactive"] {
     transform: translateY(100%);
 }
 
-#influencer-content section.scroll-video[data-status="below"] {
+#portfolio-content section.scroll-video[data-status="below"] {
     transform: translateY(-100%);
 }
 
-#influencer-content section.scroll-video[data-status="above"] {
+#portfolio-content section.scroll-video[data-status="above"] {
     transform: translateY(100%);
 }
 
-#influencer-content section.scroll-video[data-status="becoming-active-from-above"] {
+#portfolio-content section.scroll-video[data-status="becoming-active-from-above"] {
     transform: translateY(200%);
     transition: none;
 }
 
-#influencer-content section.scroll-video[data-status="becoming-active-from-below"] {
+#portfolio-content section.scroll-video[data-status="becoming-active-from-below"] {
     transform: translateY(-200%);
     transition: none;
 }
@@ -249,7 +247,7 @@ button.arrow-left {
     flex-direction: column;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     justify-content: flex-start;
 }
 

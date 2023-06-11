@@ -1,71 +1,93 @@
 function menuOnClick() {
-    document.getElementById("menu-bar").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
+
+function removeClassOnResize() {
+  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var business = document.getElementById('businesses');
+  var influencer = document.getElementById('influencers')
+  if (windowWidth <= 760) {
+    business.classList.remove('from-left', 'btn');
+    influencer.classList.remove('from-right', 'btn');
+  } else {
+    business.classList.add('from-left', 'btn');
+    influencer.classList.add('from-right', 'btn');
+  }
+}
+
+// Call the function on window resize
+window.addEventListener('resize', removeClassOnResize);
+
+// Call the function on page load
+window.addEventListener('load', removeClassOnResize);
+
+
+window.addEventListener('scroll', function () {
+  var stickyDiv = document.getElementById('logo');
+  var offset = window.innerHeight * 0.6;
+
+  if (window.scrollY > offset) {
+    stickyDiv.classList.remove('visible');
+  } else {
+    stickyDiv.classList.add('visible');
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the businesses and influencers div elements by their IDs
+  /* const businessesDiv = document.getElementById("businesses"); */
+  const influencersDiv = document.getElementById("influencers");
+
+  // Define a function to toggle the "selected" class on a given element
+  function toggleSelectedClass(element) {
+    element.classList.toggle("selected");
   }
 
-
-  function removeClassOnResize() {
-    var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    var business = document.getElementById('businesses');
-    var influencer = document.getElementById('influencers')
-    if (windowWidth <= 760) {
-      business.classList.remove('from-left', 'btn');
-      influencer.classList.remove('from-right', 'btn');
-    } else {
-      business.classList.add('from-left','btn');
-      influencer.classList.add('from-right','btn');
+  /* Add a click event listener to the businesses div
+  businessesDiv.addEventListener("click", function() {
+    if (!businessesDiv.classList.contains("selected")) {
+      toggleSelectedClass(businessesDiv);
+      toggleSelectedClass(influencersDiv);
     }
-  }
-  
-  // Call the function on window resize
-  window.addEventListener('resize', removeClassOnResize);
-  
-  // Call the function on page load
-  window.addEventListener('load', removeClassOnResize);
+  });*/
 
-
-  window.addEventListener('scroll', function() {
-    var stickyDiv = document.getElementById('logo');
-    var offset = window.innerHeight * 0.6; 
-  
-    if (window.scrollY > offset) {
-      stickyDiv.classList.remove('visible');
-    } else {
-      stickyDiv.classList.add('visible');
+  // Add a click event listener to the influencers div
+  influencersDiv.addEventListener("click", function () {
+    if (!influencersDiv.classList.contains("selected")) {
+      toggleSelectedClass(influencersDiv);
+      /* toggleSelectedClass(businessesDiv); */
     }
   });
+});
 
-  document.addEventListener("DOMContentLoaded", function() {
-    // Get the businesses and influencers div elements by their IDs
-    const businessesDiv = document.getElementById("businesses");
-    const influencersDiv = document.getElementById("influencers");
-  
-    // Define a function to toggle the "selected" class on a given element
-    function toggleSelectedClass(element) {
-      element.classList.toggle("selected");
+
+function clearForm() {
+  document.getElementById("name-input").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("message").value = "";
+}
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var hiddenDiv = document.querySelector('.scroll-hidden');
+  window.addEventListener('scroll', function () {
+    var scrollPosition = window.pageYOffset;
+    if (scrollPosition > 0 && !hiddenDiv.classList.contains('scroll-visible')) {
+      hiddenDiv.classList.add('scroll-visible'); // Show the hidden div
     }
-  
-    // Add a click event listener to the businesses div
-    businessesDiv.addEventListener("click", function() {
-      if (!businessesDiv.classList.contains("selected")) {
-        toggleSelectedClass(businessesDiv);
-        toggleSelectedClass(influencersDiv);
-      }
-    });
-  
-    // Add a click event listener to the influencers div
-    influencersDiv.addEventListener("click", function() {
-      if (!influencersDiv.classList.contains("selected")) {
-        toggleSelectedClass(influencersDiv);
-        toggleSelectedClass(businessesDiv);
-      }
-    });
   });
+});
 
 
-  function clearForm() {
-    document.getElementById("name-input").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
-  }
+window.addEventListener('load', function () {
+  var myDiv = document.getElementById('container1');
+  myDiv.style.opacity = "1";
+  setTimeout(() => {
+    myDiv.classList.add('bg-fade-out');
+  }, 1000);
+});

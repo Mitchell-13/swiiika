@@ -57,7 +57,7 @@
                     <a href="https://www.twitch.tv/swiiika" target="_blank"><i class="fa-brands fa-twitch"></i></a>
                 </div>
             </div>
-            <div id="container2">
+            <!--<div id="container2">
                 <p>
                     <strong>Hello! I'm Connor,</strong> a video editor and drone videographer with <strong>3+ years
                         of
@@ -70,20 +70,47 @@
                     of my past work, and <strong>let's collaborate to take your video content to the next
                         level.</strong>
                 </p>
-                <div id="headshot"><img src="assets/images/headshot.jfif" height="300px"></div>
-            </div>
+                <div id="headshot"><img src="assets/images/Layer 0.png" height="300px"></div>
+
+            </div>-->
         </div>
     </div>
-    <a href="#clients">
+    <a href="#aboutme">
         <div class="border">
-            <div class="border-text">Clients</div>
+            <div class="border-text scroll-hidden">About Me</div>
+        </div>
+    </a>
+    <div id="aboutme">
+        <div id="aboutme-content">
+            <img src="/assets/images/Layer 0.png" alt="">
+            <div id="aboutme-text">
+                <p>Hello! I'm,
+                <h1>Connor Johnson</h1>
+
+                A content editor and drone videographer with <strong>3+ years
+                    of
+                    experience</strong> creating engaging social media videos for influencers and businesses.
+                <strong>My
+                    work has garnered over one billion views</strong>, and I pride myself on delivering
+                high-quality
+                content that captures my clients' vision and engages their audience. Check out my portfolio to
+                see some
+                of my past work, and <strong>let's collaborate to take your video content to the next
+                    level.</strong></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- <a href="#clients">
+        <div class="border">
+            <div class="border-text scroll-hidden">Clients</div>
         </div>
     </a>
     <div id="clients">
         <p class="section-heading">I've worked with a wide range of clients, including non-profits, influencers,
             tech companies, and streamers.
             My work has helped these brands gain recognition and establish a strong presence.
-            <span><br><br>Check out some of my current and previous clients: </span>
+            <span>Check out some of my current and previous clients: </span>
         </p>
         <div class="container">
             <a href="https://www.youtube.com/@filianIsLost" target="_blank" class="profile">
@@ -119,227 +146,187 @@
                     Heads</span>
             </a>
         </div>
-    </div>
+    </div>-->
     <a href="#portfolio">
         <div class="border">
             <div class="border-text">Portfolio</div>
         </div>
     </a>
     <div id="portfolio">
-        <div id="portfolio-bg" class="jarallax" data-jarallax-video="https://vimeo.com/826404982">
-            <div id="portfolio-buttons">
-                <div class="btn from-right selected" id="influencers">Influencers</div>
-                <span></span>
-                <div class="btn from-left" id="businesses">Businesses</div>
-            </div>
-            <div id="portfolio-content">
-                <div id="influencer-content" class="">
-                    <button class="arrow-right" type="button" onclick="handleRightClick()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
-                    <button class="arrow-left" type="button" onclick="handleLeftClick()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
-                    <section class="port-section" data-index="0" data-status="active">
-                        <div class="video-dots">
-                            <div class="dot dot-0 dot-active"></div>
-                            <div class="dot dot-1"></div>
-                            <div class="dot dot-2"></div>
-                            <div class="dot dot-3"></div>
-                            <div class="dot dot-4"></div>
-                        </div>
-                        <div class="vid-views">
-                            <div id="video-container">
-                                <div id="sections-container">
-                                    <div class="top-bar showhide"><button class="arrow-up" onclick="handleUpClick()">
-                                            <i class="fa-solid fa-angle-up"></i></button>
-                                    </div>
-                                    <div class="bottom-bar showhide"><button class="arrow-down" onclick="handleDownClick()">
-                                            <i class="fa-solid fa-angle-down"></i></button>
-                                    </div>
-                                    <section class="scroll-video filian-vids" UD-data-index="0" data-status="active" data-views="750,000+ Views">
-                                        <button id="playpause" class='play-button showhide' onclick="playPause('filian0')"></button>
-                                        <video class="shorts" height="600" id="filian0" preload="metadata" loop>
-                                            <source src="assets/videos/filian/Filian_slices_natasha_V2.mp4#t=0.001" type="video/mp4">
-                                        </video>
-                                    </section>
-                                    <section class="scroll-video filian-vids" UD-data-index="1" data-status="inactive" data-views="24,000,000+ Views">
-                                        <button id="playpause" class='play-button showhide' onclick="playPause('filian1')"></button>
-                                        <video class="shorts" height="600" id="filian1" preload="metadata" loop>
-                                            <source src="assets/videos/filian/Filian_Omegle_Reactions_2.mp4#t=0.001" type="video/mp4">
-                                        </video>
-                                    </section>
-                                    <section class="scroll-video filian-vids" UD-data-index="2" data-status="inactive" data-views="8,200,000+ Views">
-                                        <button id="playpause" class='play-button showhide' onclick="playPause('filian2')"></button>
-                                        <video class="shorts" height="600" id="filian2" preload="metadata" loop>
-                                            <source src="assets/videos/filian/Filian_gets_splattered_by_miz_V2.mp4#t=0.001" type="video/mp4">
-                                        </video>
-                                    </section>
-                                    <section class="scroll-video filian-vids" UD-data-index="3" data-status="inactive" data-views="10,000,000+ Views">
-                                        <button id="playpause" class='play-button showhide' onclick="playPause('filian3')"></button>
-                                        <video class="shorts" height="600" id="filian3" preload="metadata" loop>
-                                            <source src="assets/videos/filian/Filian_proves_shes_an_anime_girl_on_omegleV2.mp4#t=0.001" type="video/mp4">
-                                        </video>
-                                    </section>
-                                    <section class="scroll-video filian-vids" UD-data-index="4" data-status="inactive" data-views="4,400,000+ Views">
-                                        <button id="playpause" class='play-button showhide' onclick="playPause('filian4')"></button>
-                                        <video class="shorts" height="600" id="filian4" preload="metadata" loop>
-                                            <source src="assets/videos/filian/Filian_finally_caught_her_tail.mp4#t=0.001" type="video/mp4">
-                                        </video>
-                                    </section>
-
-                                </div>
-                            </div>
-                            <span id="view-count">750,000+ Views</span>
-                        </div>
-                        <div id="shorts-desc">
-                            <p class="name">FILIAN <br> <span class=views>766,350,000+ <br>Views</span></p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="shorts-profile-picture"><img src="assets/images/clients/filian.png" alt="filian profile picture"></div>
-
-                    </section>
-                    <section class="port-section" data-index="1" data-status="inactive">
-                        <div class="video-dots">
-                        </div>
-                        <div class="vid-views">
-                            <div id="video-container">
-                                <div id="sections-container">
-                                    <section class="scroll-video" UD-data-index="0" data-status="active" data-views="100,000+ Views">
-                                        <button id="playpause" class='play-button showhide' onclick="playPause('fallenshadow0')"></button>
-                                        <video class="shorts" height="600" id="fallenshadow0" preload="metadata" loop>
-                                            <source src="assets/videos/fallen shadow/Shadow_for_president.mp4#t=0.001" type="video/mp4">
-                                        </video>
-                                    </section>
-                                </div>
-                            </div>
-                            <span id="view-count">100,000+ Views</span>
-                        </div>
-                        <div id="shorts-desc">
-                            <p class="name">FALLEN SHADOW <br> <span class=views>1,500,000+ <br>Views</span></p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="shorts-profile-picture"><img src="assets/images/clients/fallenshadow.png" alt="fallenshadow profile picture"></div>
-
-                    </section>
-                    <section class="port-section" data-index="2" data-status="inactive">
-                        <div class="video-dots">
-                        </div>
-                        <div class="vid-views">
-                            <div id="video-container">
-                                <div id="sections-container">
-                                    <section class="scroll-video" UD-data-index="0" data-status="active" data-views="400,000+ Views">
-                                        <button id="playpause" class='play-button showhide' onclick="playPause('projektm0')"></button>
-                                        <video class="shorts" height="600" id="projektm0" preload="metadata" loop>
-                                            <source src="assets/videos/projekt melody/Melody_gets_roasted_by_Charlie.mp4#t=0.001" type="video/mp4">
-                                        </video>
-                                    </section>
-                                </div>
-                            </div>
-                            <span id="view-count">400,000+ Views</span>
-                        </div>
-                        <div id="shorts-desc">
-                            <p class="name">PROJEKTMELODY <br> <span class=views>700,000+<br>Views</span></p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="shorts-profile-picture"><img src="assets/images/clients/projektmelody.png" alt="fallenshadow profile picture"></div>
-
-                    </section>
-                    <section class="port-section" data-index="3" data-status="inactive">
-                        <div class="video-dots">
-                        </div>
-                        <div class="vid-views">
-                            <div id="video-container">
-                                <div id="sections-container">
-                                    <section class="scroll-video" UD-data-index="0" data-status="active" data-views="400,000+ Views">
-                                        <button id="playpause" class='play-button showhide' onclick="playPause('quqco0')"></button>
-                                        <video class="shorts" height="600" id="quqco0" preload="metadata" loop>
-                                            <source src="assets/videos/quqco/Quqcos_painting_fights_back.mp4" type="video/mp4">
-                                        </video>
-                                    </section>
-                                </div>
-                            </div>
-                            <span id="view-count" class="flexFont">750,000+ Views</span>
-                        </div>
-                        <div id="shorts-desc">
-                            <p class="name">QUQCO <br> <span class=views>2,800,000+ <br>Views</span></p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="shorts-profile-picture"><img src="assets/images/clients/quqco.png" alt="quqco profile picture"></div>
-
-                    </section>
+        <div id="portfolio-content">
+            <button class="arrow-right" type="button" onclick="handleRightClick()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
+            <button class="arrow-left" type="button" onclick="handleLeftClick()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
+            <section class="port-section" data-index="0" data-status="active">
+                <div class="video-dots">
+                    <div class="dot dot-0 dot-active"></div>
+                    <div class="dot dot-1"></div>
+                    <div class="dot dot-2"></div>
+                    <div class="dot dot-3"></div>
+                    <div class="dot dot-4"></div>
                 </div>
-            </div>
-            <div id="business-content" class="portfolio-hidden" style="display:none">
-                <button class="arrow-right" type="button" onclick="handleRightClickbiz()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
-                <button class="arrow-left" type="button" onclick="handleLeftClickbiz()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
-
-                <!--<section class="port-section-biz" data-indexbiz="0" data-status="active">
-                    <div class="video-dots">
-                        <div class="dot dot-0 dot-active"></div>
-                        <div class="dot dot-1"></div>
-                        <div class="dot dot-2"></div>
-                        <div class="dot dot-3"></div>
-                        <div class="dot dot-4"></div>
-                    </div>
-                    <div class="vid-views">
-                        <div id="video-container">
-                            <div id="sections-container">
-                                <div class="top-bar showhide"><button class="arrow-up" onclick="handleUpClick()">
-                                        <i class="fa-solid fa-angle-up"></i></button>
-                                </div>
-                                <div class="bottom-bar showhide"><button class="arrow-down" onclick="handleDownClick()">
-                                        <i class="fa-solid fa-angle-down"></i></button>
-                                </div>
-                                <section class="scroll-video filian-vids" biz-data-index="0" data-status="active" data-views="750,000+ Views">
-                                    <button id="playpause" class='play-button showhide' onclick="playPause('filian0')"></button>
-                                    <video class="shorts" height="600" id="filian0" preload="metadata" loop>
-                                        <source src="assets/videos/filian/Filian_slices_natasha_V2.mp4#t=0.001" type="video/mp4">
-                                    </video>
-                                </section>
-                                <section class="scroll-video filian-vids" biz-data-index="1" data-status="inactive" data-views="24,000,000+ Views">
-                                    <button id="playpause" class='play-button showhide' onclick="playPause('filian1')"></button>
-                                    <video class="shorts" height="600" id="filian1" preload="metadata" loop>
-                                        <source src="assets/videos/filian/Filian_Omegle_Reactions_2.mp4#t=0.001" type="video/mp4">
-                                    </video>
-                                </section>
-                                <section class="scroll-video filian-vids" biz-data-index="2" data-status="inactive" data-views="8,200,000+ Views">
-                                    <button id="playpause" class='play-button showhide' onclick="playPause('filian2')"></button>
-                                    <video class="shorts" height="600" id="filian2" preload="metadata" loop>
-                                        <source src="assets/videos/filian/Filian_gets_splattered_by_miz_V2.mp4#t=0.001" type="video/mp4">
-                                    </video>
-                                </section>
-                                <section class="scroll-video filian-vids" biz-data-index="3" data-status="inactive" data-views="10,000,000+ Views">
-                                    <button id="playpause" class='play-button showhide' onclick="playPause('filian3')"></button>
-                                    <video class="shorts" height="600" id="filian3" preload="metadata" loop>
-                                        <source src="assets/videos/filian/Filian_proves_shes_an_anime_girl_on_omegleV2.mp4#t=0.001" type="video/mp4">
-                                    </video>
-                                </section>
-                                <section class="scroll-video filian-vids" biz-data-index="4" data-status="inactive" data-views="4,400,000+ Views">
-                                    <button id="playpause" class='play-button showhide' onclick="playPause('filian4')"></button>
-                                    <video class="shorts" height="600" id="filian4" preload="metadata" loop>
-                                        <source src="assets/videos/filian/Filian_finally_caught_her_tail.mp4#t=0.001" type="video/mp4">
-                                    </video>
-                                </section>
-
+                <div class="vid-views">
+                    <div id="video-container">
+                        <div id="sections-container">
+                            <div class="top-bar showhide"><button class="arrow-up" onclick="handleUpClick()">
+                                    <i class="fa-solid fa-angle-up"></i></button>
                             </div>
+                            <div class="bottom-bar showhide"><button class="arrow-down" onclick="handleDownClick()">
+                                    <i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <section class="scroll-video filian-vids" UD-data-index="0" data-status="active" data-views="750,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('filian0')"></button>
+                                <video class="shorts" height="600" id="filian0" preload="metadata" loop>
+                                    <source src="assets/videos/filian/Filian_slices_natasha_V2.mp4#t=0.001" type="video/mp4">
+                                </video>
+                            </section>
+                            <section class="scroll-video filian-vids" UD-data-index="1" data-status="inactive" data-views="24,000,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('filian1')"></button>
+                                <video class="shorts" height="600" id="filian1" preload="metadata" loop>
+                                    <source src="assets/videos/filian/Filian_Omegle_Reactions_2.mp4#t=0.001" type="video/mp4">
+                                </video>
+                            </section>
+                            <section class="scroll-video filian-vids" UD-data-index="2" data-status="inactive" data-views="8,200,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('filian2')"></button>
+                                <video class="shorts" height="600" id="filian2" preload="metadata" loop>
+                                    <source src="assets/videos/filian/Filian_gets_splattered_by_miz_V2.mp4#t=0.001" type="video/mp4">
+                                </video>
+                            </section>
+                            <section class="scroll-video filian-vids" UD-data-index="3" data-status="inactive" data-views="10,000,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('filian3')"></button>
+                                <video class="shorts" height="600" id="filian3" preload="metadata" loop>
+                                    <source src="assets/videos/filian/Filian_proves_shes_an_anime_girl_on_omegleV2.mp4#t=0.001" type="video/mp4">
+                                </video>
+                            </section>
+                            <section class="scroll-video filian-vids" UD-data-index="4" data-status="inactive" data-views="4,400,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('filian4')"></button>
+                                <video class="shorts" height="600" id="filian4" preload="metadata" loop>
+                                    <source src="assets/videos/filian/Filian_finally_caught_her_tail.mp4#t=0.001" type="video/mp4">
+                                </video>
+                            </section>
+
                         </div>
-                        <span id="view-count">750,000+ Views</span>
                     </div>
-                    <div id="shorts-desc">
-                        <p class="name">FILIAN <br> <span class=views>766,350,000+ <br>Views</span></p>
+                    <span id="view-count">750,000+ Views</span>
+                </div>
+                <div id="shorts-desc">
+                    <p class="name">FILIAN <br> <span class=views>766,350,000+ <br>Views</span></p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="shorts-profile-picture"><img src="assets/images/clients/filian.png" alt="filian profile picture"></div>
+
+            </section>
+            <section class="port-section" data-index="1" data-status="inactive">
+                <div class="video-dots">
+                </div>
+                <div class="vid-views">
+                    <div id="video-container">
+                        <div id="sections-container">
+                            <section class="scroll-video" UD-data-index="0" data-status="active" data-views="100,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('fallenshadow0')"></button>
+                                <video class="shorts" height="600" id="fallenshadow0" preload="metadata" loop>
+                                    <source src="assets/videos/fallen shadow/Shadow_for_president.mp4#t=0.001" type="video/mp4">
+                                </video>
+                            </section>
+                        </div>
                     </div>
-                    <div class="shorts-profile-picture"><img src="assets/images/clients/filian.png" alt="filian profile picture"></div>
+                    <span id="view-count">100,000+ Views</span>
+                </div>
+                <div id="shorts-desc">
+                    <p class="name">FALLEN SHADOW <br> <span class=views>1,500,000+ <br>Views</span></p>
 
-                </section>-->
-            </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="shorts-profile-picture"><img src="assets/images/clients/fallenshadow.png" alt="fallenshadow profile picture"></div>
+
+            </section>
+            <section class="port-section" data-index="2" data-status="inactive">
+                <div class="video-dots">
+                </div>
+                <div class="vid-views">
+                    <div id="video-container">
+                        <div id="sections-container">
+                            <section class="scroll-video" UD-data-index="0" data-status="active" data-views="400,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('projektm0')"></button>
+                                <video class="shorts" height="600" id="projektm0" preload="metadata" loop>
+                                    <source src="assets/videos/projekt melody/Melody_gets_roasted_by_Charlie.mp4#t=0.001" type="video/mp4">
+                                </video>
+                            </section>
+                        </div>
+                    </div>
+                    <span id="view-count">400,000+ Views</span>
+                </div>
+                <div id="shorts-desc">
+                    <p class="name">PROJEKTMELODY <br> <span class=views>700,000+<br>Views</span></p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="shorts-profile-picture"><img src="assets/images/clients/projektmelody.png" alt="fallenshadow profile picture"></div>
+
+            </section>
+            <section class="port-section" data-index="3" data-status="inactive">
+                <div class="video-dots">
+                </div>
+                <div class="vid-views">
+                    <div id="video-container">
+                        <div id="sections-container">
+                            <section class="scroll-video" UD-data-index="0" data-status="active" data-views="400,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('quqco0')"></button>
+                                <video class="shorts" height="600" id="quqco0" preload="metadata" loop>
+                                    <source src="assets/videos/quqco/Quqcos_painting_fights_back.mp4" type="video/mp4">
+                                </video>
+                            </section>
+                        </div>
+                    </div>
+                    <span id="view-count" class="flexFont">750,000+ Views</span>
+                </div>
+                <div id="shorts-desc">
+                    <p class="name">QUQCO <br> <span class=views>2,800,000+ <br>Views</span></p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="shorts-profile-picture"><img src="assets/images/clients/quqco.png" alt="quqco profile picture"></div>
+
+            </section>
+
+        </div>
+        <div class="container">
+            <a href="https://www.youtube.com/@filianIsLost" target="_blank" class="profile">
+                <img src="assets/images/clients/filian.png" alt="" /><span class="name">filian</span>
+            </a>
+            <a href="https://www.twitch.tv/fallenshadow" target="_blank" class="profile">
+                <img src="assets/images/clients/fallenshadow.png" alt="" /><span class="name name2">Fallen
+                    Shadow</span>
+            </a>
+            <a href="https://www.twitch.tv/lacari" target="_blank" class="profile">
+                <img src="assets/images/clients/lacari.png" alt="" /><span class="name name2">Lacari</span>
+            </a>
+            <a href="https://www.twitch.tv/megalodonvt" target="_blank" class="profile">
+                <img src="assets/images/clients/Megalodon.png" alt="" /><span class="name name2">megalodonvt</span>
+            </a>
+            <a href="https://www.twitch.tv/projektmelody" target="_blank" class="profile">
+                <img src="assets/images/clients/projektmelody.png" alt="" /><span class="name name2">ProjektMelody</span>
+            </a>
+            <a href="https://www.twitch.tv/quqco" target="_blank" class="profile">
+                <img src="assets/images/clients/quqco.png" alt="" /><span class="name name2">quqco</span>
+            </a>
+            <a href="https://www.twitch.tv/sprixer" target="_blank" class="profile">
+                <img src="assets/images/clients/sprixer.png" alt="" /><span class="name name2">Sprixer</span>
+            </a>
+            <a href="https://www.twitch.tv/yatosuki" target="_blank" class="profile">
+                <img src="assets/images/clients/yatosuki.png" alt="" /><span class="name name2">Yatosuki</span>
+            </a>
+            <a href="https://blerp.com/" target="_blank" class="profile">
+                <img src="assets/images/clients/blerp.png" alt="" /><span class="name name2">Blerp</span>
+            </a>
+            <a href="https://stemheads.org/" target="_blank" class="profile">
+                <img src="assets/images/clients/stemheads.png" alt="" /><span class="name name2">Stem
+                    Heads</span>
+            </a>
         </div>
     </div>
     </div>
@@ -349,13 +336,12 @@
         </div>
     </a>
     <div id="pricing">
-        <div id="blur-bg"></div>
-        <div id="pricing-content">
-            <div id="table-header">
-                <img src="/assets/images/logo.png" alt="">
-                <div id="line"></div>
-                <p>Short-Form Content Editing & <br>Digital Marketing</p>
-            </div>
+        <div id="table-header">
+            <img src="/assets/images/logo.png" alt="">
+            <div id="line"></div>
+            <p>Short-Form Content Editing & <br>Digital Marketing for Streamers</p>
+        </div>
+        <div id="table-container" style="overflow-x:auto;">
             <table id="pricing-table">
                 <tr>
                     <th>Package-</th>
@@ -411,7 +397,7 @@
                             </ul>
                         </ul>
                     </td>
-                    <td>$50 <span class="sub-text">(subtitles)</span> <br>$45<span class="sub-text">(no
+                    <td>$50 <span class="sub-text">(subtitles)</span> <br>$45 <span class="sub-text">(no
                             subtitles)</span></td>
                 </tr>
             </table>
@@ -458,7 +444,7 @@
         </div>
         <a href="mailto:business@swiiika.com">business@swiiika.com</a>
         <p>&copy;
-            <?php echo date("Y"); ?> Swiiika  |  <a href="privacy.php">Privacy Policy</a>
+            <?php echo date("Y"); ?> Swiiika | <a href="privacy.php">Privacy Policy</a>
         </p>
     </footer>
 
