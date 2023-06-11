@@ -4,26 +4,23 @@ function menuOnClick() {
   document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
-
+/*
 function removeClassOnResize() {
   var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  var business = document.getElementById('businesses');
   var influencer = document.getElementById('influencers')
   if (windowWidth <= 760) {
-    business.classList.remove('from-left', 'btn');
     influencer.classList.remove('from-right', 'btn');
   } else {
-    business.classList.add('from-left', 'btn');
     influencer.classList.add('from-right', 'btn');
   }
 }
-
 // Call the function on window resize
 window.addEventListener('resize', removeClassOnResize);
 
 // Call the function on page load
 window.addEventListener('load', removeClassOnResize);
 
+*/
 
 window.addEventListener('scroll', function () {
   var stickyDiv = document.getElementById('logo');
@@ -35,34 +32,34 @@ window.addEventListener('scroll', function () {
     stickyDiv.classList.add('visible');
   }
 });
-
-document.addEventListener("DOMContentLoaded", function () {
+/*
+docume nt.addEventListener("DOMContentLoaded", function () {
   // Get the businesses and influencers div elements by their IDs
-  /* const businessesDiv = document.getElementById("businesses"); */
+  const businessesDiv = document.getElementById("businesses");
   const influencersDiv = document.getElementById("influencers");
 
-  // Define a function to toggle the "selected" class on a given element
+  // Define a function to toggle the"selected" class on a given element
   function toggleSelectedClass(element) {
     element.classList.toggle("selected");
   }
 
-  /* Add a click event listener to the businesses div
+  Add a click event listener to the businesses div
   businessesDiv.addEventListener("click", function() {
     if (!businessesDiv.classList.contains("selected")) {
       toggleSelectedClass(businessesDiv);
       toggleSelectedClass(influencersDiv);
     }
-  });*/
+  });
 
   // Add a click event listener to the influencers div
   influencersDiv.addEventListener("click", function () {
     if (!influencersDiv.classList.contains("selected")) {
       toggleSelectedClass(influencersDiv);
-      /* toggleSelectedClass(businessesDiv); */
+      toggleSelectedClass(businessesDiv);
     }
   });
 });
-
+*/
 
 function clearForm() {
   document.getElementById("name-input").value = "";
@@ -91,3 +88,8 @@ window.addEventListener('load', function () {
     myDiv.classList.add('bg-fade-out');
   }, 1000);
 });
+
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
