@@ -53,7 +53,6 @@
 
 #portfolio {
     height: 100vh;
-    background-color: rgb(0, 0, 0);
     scroll-margin-top: 100px;
     background-image: url(/assets/images/blurbg.png);
     background-repeat: no-repeat;
@@ -62,15 +61,15 @@
 }
 
 #portfolio-content {
-    height: 1000px;
+    height: 100vh;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
 #portfolio-content {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +128,7 @@ button.arrow-left {
     padding-left: 20%;
     padding-right: 20%;
     transition: transform 400ms ease;
-    height: fit-content;
+    height: 75vh;
 }
 
 /* Left and Right buttons */
@@ -210,8 +209,8 @@ button.arrow-left {
 }
 #video-container{
     position: relative;
-    height: 600px;
-    width: 343px;
+    height: 60vh;
+    width: 300px;
     overflow: hidden;
 }
 #sections-container{
@@ -220,7 +219,7 @@ button.arrow-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 600px;
+    height: 60vh;
     align-items: center;
     justify-self: end;
     margin-right: 5px;
@@ -230,7 +229,7 @@ button.arrow-left {
 .scroll-video{
     position: absolute;
     width: fit-content;
-    height: 600px;
+    height: 60vh;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -240,6 +239,7 @@ button.arrow-left {
 
 .scroll-video video {
     opacity: 50%;
+    height: 60vh;
 }
 
 #shorts-desc {

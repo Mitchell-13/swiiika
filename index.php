@@ -175,7 +175,7 @@
                             </div>
                             <section class="scroll-video filian-vids" UD-data-index="0" data-status="active" data-views="750,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('filian0')"></button>
-                                <video class="shorts" height="600" id="filian0" preload="metadata" loop>
+                                <video class="shorts" id="filian0" preload="metadata" loop>
                                     <source src="assets/videos/filian/Filian_slices_natasha_V2.mp4#t=0.001" type="video/mp4">
                                 </video>
                             </section>

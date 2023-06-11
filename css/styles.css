@@ -325,7 +325,7 @@ animation: gradient-bg 10s ease infinite;
     position: relative;
 }
 #aboutme-content img{
-    height: 90%;
+    height: 65vh;
     align-self: flex-end;
 
 }
@@ -335,10 +335,10 @@ animation: gradient-bg 10s ease infinite;
     padding-right: 10%;
     color:white;
     font-family: "roboto condensed", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.8vw;
 }
 #aboutme-text h1{
-    font-size: 4em;
+    font-size: 3vw;
 }
 
 .scroll-hidden {
