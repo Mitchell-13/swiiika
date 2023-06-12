@@ -58,24 +58,19 @@
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
+    padding-top: 60px;
 }
 
 #portfolio-content {
-    height: 100vh;
+    height: 75vh;
     display: flex;
+    width: 100%;
     position: relative;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
-#portfolio-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
 
 #portfolio-content .arrow-right {
     color: white;
@@ -122,13 +117,10 @@ button.arrow-left {
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 100px;
     width: 100%;
     padding-left: 20%;
     padding-right: 20%;
     transition: transform 400ms ease;
-    height: 75vh;
 }
 
 /* Left and Right buttons */
@@ -210,7 +202,7 @@ button.arrow-left {
 #video-container{
     position: relative;
     height: 60vh;
-    width: 300px;
+    width: 33.75vh;
     overflow: hidden;
 }
 #sections-container{
@@ -222,7 +214,6 @@ button.arrow-left {
     height: 60vh;
     align-items: center;
     justify-self: end;
-    margin-right: 5px;
     background-color: #000000;
 }
 
@@ -249,6 +240,7 @@ button.arrow-left {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.5rem;
     justify-content: flex-start;
+    margin-left: 10px;
 }
 
 #shorts-desc p.name {
@@ -256,6 +248,7 @@ button.arrow-left {
     display: inline-block;
     line-height: 0.6;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .views {

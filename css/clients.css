@@ -56,7 +56,7 @@
 
     .profile img {
 
-        width: 10vw;
+        width: 8vw;
     }
 
     .profile img:hover+.name {
@@ -119,8 +119,8 @@
     filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
     background-color: white;
     cursor: pointer;
-    max-height: 230px;
-    max-width: 230px;
+    max-height: 155px;
+    max-width: 155px;
 }
 
 .profile .name {

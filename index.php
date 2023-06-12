@@ -295,35 +295,35 @@
 
         </div>
         <div class="container">
-            <a href="https://www.youtube.com/@filianIsLost" target="_blank" class="profile">
+            <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/filian.png" alt="" /><span class="name">filian</span>
             </a>
-            <a href="https://www.twitch.tv/fallenshadow" target="_blank" class="profile">
+            <a onclick="goToIndex(1)" class="profile">
                 <img src="assets/images/clients/fallenshadow.png" alt="" /><span class="name name2">Fallen
                     Shadow</span>
             </a>
-            <a href="https://www.twitch.tv/lacari" target="_blank" class="profile">
+            <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/lacari.png" alt="" /><span class="name name2">Lacari</span>
             </a>
-            <a href="https://www.twitch.tv/megalodonvt" target="_blank" class="profile">
+            <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/Megalodon.png" alt="" /><span class="name name2">megalodonvt</span>
             </a>
-            <a href="https://www.twitch.tv/projektmelody" target="_blank" class="profile">
+            <a onclick="goToIndex(2)" class="profile">
                 <img src="assets/images/clients/projektmelody.png" alt="" /><span class="name name2">ProjektMelody</span>
             </a>
-            <a href="https://www.twitch.tv/quqco" target="_blank" class="profile">
+            <a onclick="goToIndex(3)" class="profile">
                 <img src="assets/images/clients/quqco.png" alt="" /><span class="name name2">quqco</span>
             </a>
-            <a href="https://www.twitch.tv/sprixer" target="_blank" class="profile">
+            <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/sprixer.png" alt="" /><span class="name name2">Sprixer</span>
             </a>
-            <a href="https://www.twitch.tv/yatosuki" target="_blank" class="profile">
+            <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/yatosuki.png" alt="" /><span class="name name2">Yatosuki</span>
             </a>
-            <a href="https://blerp.com/" target="_blank" class="profile">
+            <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/blerp.png" alt="" /><span class="name name2">Blerp</span>
             </a>
-            <a href="https://stemheads.org/" target="_blank" class="profile">
+            <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/stemheads.png" alt="" /><span class="name name2">Stem
                     Heads</span>
             </a>

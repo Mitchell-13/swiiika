@@ -38,46 +38,6 @@ const handleRightClick = () => {
   }, 50);
 }
 
-/* left and right buttons on business portfolio section
-let activeIndexbiz = 0;
-
-const groupsbiz = document.getElementsByClassName("port-section-biz");
-
-const handleLeftClickbiz = () => {
-  const nextIndex = activeIndexbiz - 1 >= 0 ? activeIndexbiz - 1 : groupsbiz.length - 1;
-
-  const currentGroup = document.querySelector(`[data-indexbiz="${activeIndexbiz}"]`),
-    nextGroup = document.querySelector(`[data-indexbiz="${nextIndex}"]`);
-
-  currentGroup.dataset.status = "after";
-
-  pauseAllVideos();
-  nextGroup.dataset.status = "becoming-active-from-before";
-
-  setTimeout(() => {
-    nextGroup.dataset.status = "active";
-    activeIndexbiz = nextIndex;
-  }, 50);
-}
-
-const handleRightClickbiz = () => {
-  const nextIndex = activeIndexbiz + 1 <= groupsbiz.length - 1 ? activeIndexbiz + 1 : 0;
-
-  const currentGroup = document.querySelector(`[data-indexbiz="${activeIndexbiz}"]`),
-    nextGroup = document.querySelector(`[data-indexbiz="${nextIndex}"]`);
-
-  currentGroup.dataset.status = "before";
-
-  pauseAllVideos();
-  nextGroup.dataset.status = "becoming-active-from-after";
-
-  setTimeout(() => {
-    nextGroup.dataset.status = "active";
-    activeIndexbiz = nextIndex;
-  }, 50);
-}
-*/
-
 // Up and Down buttons on shorts videos
 
 let activeIndexUD = 0;
@@ -133,37 +93,6 @@ function activateDot(index) {
   dots[index].classList.add('dot-active');
 }
 
-
-//change between influencers and businesses view
-/*
-document.getElementById('influencers').addEventListener('click', function () {
-  var div1 = document.getElementById('influencer-content');
-  var div2 = document.getElementById('business-content');
-
-  div2.classList.add('portfolio-hidden');
-  setTimeout(function () {
-    div2.style.display = "none"
-  }, 500);
-  div1.style.display = "block"
-  setTimeout(function () {
-    div1.classList.remove('portfolio-hidden');
-  }, 500);
-});
-document.getElementById('businesses').addEventListener('click', function () {
-  var div2 = document.getElementById('influencer-content');
-  var div1 = document.getElementById('business-content');
-
-  div2.classList.add('portfolio-hidden');
-  setTimeout(function () {
-    div2.style.display = "none"
-  }, 500);
-  div1.style.display = "block"
-  setTimeout(function () {
-    div1.classList.remove('portfolio-hidden');
-  }, 500);
-
-});
-*/
 //pause and play the video
 
 $(document).ready(function () {
@@ -225,4 +154,17 @@ for (var i = 0; i < triggerElements.length; i++) {
       hiddenElement.style.opacity = '0%';
     }
   });
+}
+
+const goToIndex = (index) => {
+  const nextIndex = document.querySelector(`[data-index="${index}"]`),
+  currentIndex = document.querySelector(`[data-index="${activeIndexLR}"]`);
+  pauseAllVideos();
+  currentIndex.dataset.status = "before";
+  nextIndex.dataset.status = "becoming-active-from-after";
+
+  setTimeout(() => {
+    nextIndex.dataset.status = "active";
+    activeIndexLR = index;
+  }, 50);
 }

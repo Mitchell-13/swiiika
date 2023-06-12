@@ -4,11 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(/assets/images/blurbg.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-    
+    background-color: rgb(26, 59, 32);
     color: white;
     text-shadow: 2px 2px #000;
     font-family: "roboto condensed", sans-serif;
