@@ -1,3 +1,24 @@
+<?php
+require_once('/smtp.php');
+
+$action = filter_input(INPUT_POST, 'action');
+if ($action == NULL) {
+
+}
+if ($action == "send") {
+    $name = filter_input(INPUT_POST, "name");
+    $email = filter_input(INPUT_POST, "email");
+    $subject = filter_input(INPUT_POST, "subject");
+    $content = filter_input(INPUT_POST, "message");
+
+    $errors = send($name, $subject, $email, $content);
+
+    include "test.php";
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -412,7 +433,7 @@
                 <span onclick="document.getElementById('modal').style.display='none'; clearForm()" class="w3-button w3-display-topright">&times;</span>
 
                 <p>Contact Me</p>
-                <form action="" method="post" enctype="text/plain">
+                <form action="smtp.php" method="post" enctype="text/plain">
 
                     <label for="name-input">Name: <span style="color:red">*</span></label>
                     <input type="text" id="name-input" name="name" required><br><br>
