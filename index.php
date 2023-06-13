@@ -1,24 +1,6 @@
 <?php
-require_once('/smtp.php');
-
-$action = filter_input(INPUT_POST, 'action');
-if ($action == NULL) {
-
-}
-if ($action == "send") {
-    $name = filter_input(INPUT_POST, "name");
-    $email = filter_input(INPUT_POST, "email");
-    $subject = filter_input(INPUT_POST, "subject");
-    $content = filter_input(INPUT_POST, "message");
-
-    $errors = send($name, $subject, $email, $content);
-
-    include "test.php";
-}
-
-
+session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,6 +20,7 @@ if ($action == "send") {
     <link href="css/about.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/para.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="js/menu.js"></script>
     <title>Swiiika</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
@@ -45,12 +28,32 @@ if ($action == "send") {
 </head>
 
 <body>
+    <?php
+if (isset($_SESSION['errors'])) {
+    $errorMessage = $_SESSION['errors'];
+    unset($_SESSION['errors']);
+
+    echo "
+    <div id='errors' class='w3-modal' style='display: block;'>
+        <div class='w3-modal-content w3-card-4 w3-animate-zoom'>
+            <div class='modal'>
+                <span onclick=\"document.getElementById('errors').style.display='none'; clearForm();\" class='w3-button w3-display-topright'>&times;</span>
+                <h2>{$errorMessage}</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('errors').style.display = 'block';
+    </script>";
+}
+?>
+
     <div id="test">
         <div id="menu">
             <div id="menu-bar" onclick="menuOnClick()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
+                <div id="bar3" class="bar" ></div>
             </div>
             <nav class="nav" id="nav">
                 <ul>
@@ -433,7 +436,7 @@ if ($action == "send") {
                 <span onclick="document.getElementById('modal').style.display='none'; clearForm()" class="w3-button w3-display-topright">&times;</span>
 
                 <p>Contact Me</p>
-                <form action="smtp.php" method="post" enctype="text/plain">
+                <form action="test.php" method="post">
 
                     <label for="name-input">Name: <span style="color:red">*</span></label>
                     <input type="text" id="name-input" name="name" required><br><br>
@@ -448,7 +451,7 @@ if ($action == "send") {
                     <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
 
 
-                    <input type="hidden" name="action" value="send" />
+                    <input type="hidden" name="action" value="send">
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -475,7 +478,6 @@ if ($action == "send") {
 
 <script src="js/dist/jarallax.js"></script>
 <script src="js/dist/jarallax-video.js"></script>
-<script src="js/menu.js"></script>
 <script src="js/portfolio.js"></script>
 <script src="js/clients.js"></script>
 
