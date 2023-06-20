@@ -80,23 +80,8 @@ if (isset($_SESSION['errors'])) {
                     <a href="https://www.youtube.com/channel/UCmB_ZdiFYmJUy9vEsCv55mA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     <a href="https://www.twitch.tv/swiiika" target="_blank"><i class="fa-brands fa-twitch"></i></a>
                 </div>
+                <div class="scroll-down">Scroll for more <i class="fa-solid fa-angle-down bounce-down"></i></div>
             </div>
-            <!--<div id="container2">
-                <p>
-                    <strong>Hello! I'm Connor,</strong> a video editor and drone videographer with <strong>3+ years
-                        of
-                        experience</strong> creating engaging social media videos for influencers and businesses.
-                    <strong>My
-                        work has garnered over one billion views</strong>, and I pride myself on delivering
-                    high-quality
-                    content that captures my clients' vision and engages their audience. Check out my portfolio to
-                    see some
-                    of my past work, and <strong>let's collaborate to take your video content to the next
-                        level.</strong>
-                </p>
-                <div id="headshot"><img src="assets/images/Layer 0.png" height="300px"></div>
-
-            </div>-->
         </div>
     </div>
     <a href="#aboutme">
@@ -105,8 +90,8 @@ if (isset($_SESSION['errors'])) {
         </div>
     </a>
     <div id="aboutme">
-        <div id="aboutme-content">
-            <img src="/assets/images/Layer 0.png" alt="">
+        <div class="scroll-hidden" id="aboutme-content">
+            <img  src="/assets/images/Layer 0.png" alt="">
             <div id="aboutme-text">
                 <p>Hello! I'm,
                 <h1>Connor Johnson</h1>
@@ -480,6 +465,11 @@ if (isset($_SESSION['errors'])) {
 <script src="js/dist/jarallax-video.js"></script>
 <script src="js/portfolio.js"></script>
 <script src="js/clients.js"></script>
+
+<!-- Object Fit polyfill -->
+<script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
+<!-- Lazy Load images -->
+<script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
 
 <script src="js/dist/jarallax-element.js"></script>
 <script src="https://kit.fontawesome.com/e23773eba1.js" crossorigin="anonymous"></script>

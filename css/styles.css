@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
     width: 100%;
     background-color: black;
+    font-family: "roboto condensed", sans-serif;
 }
 
 body {
@@ -237,7 +238,8 @@ footer p {
     z-index: 15;
     font-family: "roboto condensed", sans-serif;
 }
-.modal p{
+
+.modal p {
     font-size: 35px;
     text-align: center;
 }
@@ -258,7 +260,7 @@ input[type="subject"],
 textarea {
     max-width: 100%;
     min-width: 100%;
-    width:100%;
+    width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -276,6 +278,42 @@ input[type="submit"] {
 }
 
 
+.scroll-down {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    bottom: 1%;
+    align-self: center;
+    align-items: center;
+}
+
+.scroll-down i {
+    margin-top: 9px;
+}
+
+.bounce-down {
+    animation: bounce-down 2s infinite;
+}
+
+@keyframes bounce-down {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
 
 
 
@@ -288,63 +326,96 @@ input[type="submit"] {
 
 
 
-#aboutme{
+#aboutme {
     background-color: black;
-background: linear-gradient(241deg, #118d59 , #b14040);
-background-size: 400% 400%;
-height: 75vh;
-width: 100%;
+    background: linear-gradient(241deg, #118d59, #b14040);
+    background-size: 400% 400%;
+    height: 75vh;
+    width: 100%;
 
--webkit-animation: gradient-bg 10s ease infinite;
--moz-animation: gradient-bg 10s ease infinite;
-animation: gradient-bg 10s ease infinite;
+    scroll-margin-top: 100px;
+
+    -webkit-animation: gradient-bg 10s ease infinite;
+    -moz-animation: gradient-bg 10s ease infinite;
+    animation: gradient-bg 10s ease infinite;
 }
 
 @-webkit-keyframes gradient-bg {
-0%{background-position:93% 0%}
-50%{background-position:0% 100%}
-100%{background-position:93% 0%}
-}
-@-moz-keyframes gradient-bg {
-0%{background-position:93% 0%}
-50%{background-position:0% 100%}
-100%{background-position:93% 0%}
-}
-@keyframes gradient-bg {
-0%{background-position:93% 0%}
-50%{background-position:0% 100%}
-100%{background-position:93% 0%}
+    0% {
+        background-position: 93% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 93% 0%
+    }
 }
 
-#aboutme-content{
+@-moz-keyframes gradient-bg {
+    0% {
+        background-position: 93% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@keyframes gradient-bg {
+    0% {
+        background-position: 93% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+#aboutme-content {
     padding-left: 5%;
     height: 100%;
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     position: relative;
+    transition-duration: 1.5s;
 }
-#aboutme-content img{
+
+#aboutme-content img {
     height: 65vh;
     align-self: flex-end;
 
 }
-#aboutme-text{
+
+#aboutme-text {
     align-self: center;
     padding-left: 20px;
     padding-right: 10%;
-    color:white;
+    color: white;
     font-family: "roboto condensed", sans-serif;
     font-size: 1.8vw;
 }
-#aboutme-text h1{
+
+#aboutme-text h1 {
     font-size: 3vw;
 }
 
 .scroll-hidden {
     opacity: 0;
     transition: opacity 0.5s ease;
-  }
-  .scroll-visible {
+}
+
+.scroll-visible {
     opacity: 1;
-  }
+}

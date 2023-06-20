@@ -69,17 +69,39 @@ function clearForm() {
 
 
 
+function hideOnScrollStart() {
+  var hiddenDivs = document.querySelectorAll('.scroll-down');
 
-document.addEventListener('DOMContentLoaded', function () {
-  var hiddenDiv = document.querySelector('.scroll-hidden');
-  window.addEventListener('scroll', function () {
-    var scrollPosition = window.pageYOffset;
-    if (scrollPosition > 0 && !hiddenDiv.classList.contains('scroll-visible')) {
-      hiddenDiv.classList.add('scroll-visible'); // Show the hidden div
-    }
+  hiddenDivs.forEach(function (hiddenDiv) {
+
+    window.addEventListener('scroll', function () {
+      hiddenDiv.classList.add('scroll-hidden'); // Hide the hidden div initially
+      window.removeEventListener('scroll', arguments.callee); // Remove the scroll event listener
+    });
   });
-});
+}
 
+function showOnScrollToTop() {
+  var hiddenDivs = document.querySelectorAll('.scroll-hidden');
+
+  hiddenDivs.forEach(function (hiddenDiv) {
+    var isVisible = false;
+
+    window.addEventListener('scroll', function () {
+      var scrollPosition = window.pageYOffset;
+      var divTop = hiddenDiv.getBoundingClientRect().top - 500;
+
+      if (scrollPosition >= divTop && !isVisible) {
+        hiddenDiv.classList.add('scroll-visible'); // Show the hidden div
+        isVisible = true;
+      }
+    });
+  });
+}
+document.addEventListener('DOMContentLoaded', function () {
+  showOnScrollToTop();
+  hideOnScrollStart();
+});
 
 window.addEventListener('load', function () {
   var myDiv = document.getElementById('container1');
