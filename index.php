@@ -58,9 +58,9 @@ session_start();
             <nav class="nav" id="nav">
                 <ul>
                     <li><a href="#logo">Home</a></li>
-                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                 </ul>
             </nav>
         </div>
@@ -116,8 +116,8 @@ session_start();
         </div>
     </a>
     <div id="portfolio">
-    <button class="arrow-right" type="button" onclick="handleRightClick()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
-            <button class="arrow-left" type="button" onclick="handleLeftClick()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
+        <button class="arrow-right" type="button" onclick="handleRightClick()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
+        <button class="arrow-left" type="button" onclick="handleLeftClick()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
         <div class="container">
             <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/filian.png" alt="" /><span class="name">filian</span>
@@ -153,7 +153,7 @@ session_start();
             </a>
         </div>
         <div id="portfolio-content">
-            
+
             <section class="port-section" data-index="0" data-status="active">
                 <div class="video-dots">
                     <div class="dot dot-0 dot-active"></div>
@@ -365,6 +365,7 @@ session_start();
                 </tr>
             </table>
         </div>
+    </div>
     </div>
     <div id="contact-popout" class="pulse" onclick="document.getElementById('modal').style.display='block'">
         Contact Me
