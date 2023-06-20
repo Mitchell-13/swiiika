@@ -57,7 +57,7 @@ session_start();
             </div>
             <nav class="nav" id="nav">
                 <ul>
-                    <li><a href="#logo">Home</a></li>
+                    <li><a href="#head">Home</a></li>
                     <li><a href="#aboutme">About Me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#pricing">Pricing</a></li>
