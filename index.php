@@ -116,7 +116,8 @@ session_start();
         </div>
     </a>
     <div id="portfolio">
-
+    <button class="arrow-right" type="button" onclick="handleRightClick()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
+            <button class="arrow-left" type="button" onclick="handleLeftClick()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
         <div class="container">
             <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/filian.png" alt="" /><span class="name">filian</span>
@@ -152,8 +153,7 @@ session_start();
             </a>
         </div>
         <div id="portfolio-content">
-            <button class="arrow-right" type="button" onclick="handleRightClick()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
-            <button class="arrow-left" type="button" onclick="handleLeftClick()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
+            
             <section class="port-section" data-index="0" data-status="active">
                 <div class="video-dots">
                     <div class="dot dot-0 dot-active"></div>
@@ -377,17 +377,13 @@ session_start();
                 <p>Contact Me</p>
                 <form action="test.php" method="post">
 
-                    <label for="name-input">Name: <span style="color:red">*</span></label>
-                    <input type="text" id="name-input" name="name" required><br><br>
+                    <input type="text" id="name-input" name="name" placeholder="Name" required><br><br>
 
-                    <label for="subject">Subject: <span style="color:red">*</span></label>
-                    <input type="text" id="subject" name="subject" required><br><br>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required><br><br>
 
-                    <label for="email">Email: <span style="color:red">*</span></label>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
 
-                    <label for="message">Message: <span style="color:red">*</span></label>
-                    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+                    <textarea id="message" name="message" rows="5" cols="30" placeholder="Message" required></textarea><br><br>
 
 
                     <input type="hidden" name="action" value="send">

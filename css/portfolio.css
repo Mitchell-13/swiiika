@@ -52,6 +52,7 @@
 }
 
 #portfolio {
+    position: relative;
     height: fit-content;
     scroll-margin-top: 100px;
     background-image: url(/assets/images/blurbg.png);
@@ -72,7 +73,7 @@
 }
 
 
-#portfolio-content .arrow-right {
+#portfolio .arrow-right {
     color: white;
     font-size: 2vw;
     border: none;
@@ -87,7 +88,7 @@
     z-index: 10;
 }
 
-#portfolio-content .arrow-left {
+#portfolio .arrow-left {
     color: white;
     font-size: 2vw;
     border: none;
@@ -102,10 +103,11 @@
     z-index: 10;
 }
 
-#portfolio-content button.arrow-right,
+#portfolio button.arrow-right,
 button.arrow-left {
     height: 70px;
     width: 70px;
+    z-index: 10
 }
 
 
