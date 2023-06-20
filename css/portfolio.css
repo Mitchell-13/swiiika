@@ -52,7 +52,7 @@
 }
 
 #portfolio {
-    height: 100vh;
+    height: fit-content;
     scroll-margin-top: 100px;
     background-image: url(/assets/images/blurbg.png);
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@
 }
 
 #portfolio-content {
-    height: 75vh;
+    height: 60vh;
     display: flex;
     width: 100%;
     position: relative;
@@ -201,8 +201,8 @@ button.arrow-left {
 }
 #video-container{
     position: relative;
-    height: 60vh;
-    width: 33.75vh;
+    height: 45vh;
+    width: 25.31vh;
     overflow: hidden;
 }
 #sections-container{
@@ -211,7 +211,7 @@ button.arrow-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 60vh;
+    height: inherit;
     align-items: center;
     justify-self: end;
     background-color: #000000;
@@ -220,7 +220,7 @@ button.arrow-left {
 .scroll-video{
     position: absolute;
     width: fit-content;
-    height: 60vh;
+    height: inherit;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -230,7 +230,7 @@ button.arrow-left {
 
 .scroll-video video {
     opacity: 50%;
-    height: 60vh;
+    height: inherit;
 }
 
 #shorts-desc {

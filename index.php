@@ -20,7 +20,7 @@ session_start();
     <link href="css/about.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/para.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="js/menu.js"></script>
+    <script src="js/menu.js"></script>
     <title>Swiiika</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
@@ -29,11 +29,11 @@ session_start();
 
 <body>
     <?php
-if (isset($_SESSION['errors'])) {
-    $errorMessage = $_SESSION['errors'];
-    unset($_SESSION['errors']);
+    if (isset($_SESSION['errors'])) {
+        $errorMessage = $_SESSION['errors'];
+        unset($_SESSION['errors']);
 
-    echo "
+        echo "
     <div id='errors' class='w3-modal' style='display: block;'>
         <div class='w3-modal-content w3-card-4 w3-animate-zoom'>
             <div class='modal'>
@@ -45,15 +45,15 @@ if (isset($_SESSION['errors'])) {
     <script>
         document.getElementById('errors').style.display = 'block';
     </script>";
-}
-?>
+    }
+    ?>
 
     <div id="test">
         <div id="menu">
             <div id="menu-bar" onclick="menuOnClick()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar" ></div>
+                <div id="bar3" class="bar"></div>
             </div>
             <nav class="nav" id="nav">
                 <ul>
@@ -91,7 +91,7 @@ if (isset($_SESSION['errors'])) {
     </a>
     <div id="aboutme">
         <div class="scroll-hidden" id="aboutme-content">
-            <img  src="/assets/images/Layer 0.png" alt="">
+            <img src="/assets/images/Layer 0.png" alt="">
             <div id="aboutme-text">
                 <p>Hello! I'm,
                 <h1>Connor Johnson</h1>
@@ -110,58 +110,47 @@ if (isset($_SESSION['errors'])) {
         </div>
 
     </div>
-    <!-- <a href="#clients">
-        <div class="border">
-            <div class="border-text scroll-hidden">Clients</div>
-        </div>
-    </a>
-    <div id="clients">
-        <p class="section-heading">I've worked with a wide range of clients, including non-profits, influencers,
-            tech companies, and streamers.
-            My work has helped these brands gain recognition and establish a strong presence.
-            <span>Check out some of my current and previous clients: </span>
-        </p>
-        <div class="container">
-            <a href="https://www.youtube.com/@filianIsLost" target="_blank" class="profile">
-                <img src="assets/images/clients/filian.png" alt="" /><span class="name">filian</span>
-            </a>
-            <a href="https://www.twitch.tv/fallenshadow" target="_blank" class="profile">
-                <img src="assets/images/clients/fallenshadow.png" alt="" /><span class="name name2">Fallen
-                    Shadow</span>
-            </a>
-            <a href="https://www.twitch.tv/lacari" target="_blank" class="profile">
-                <img src="assets/images/clients/lacari.png" alt="" /><span class="name name2">Lacari</span>
-            </a>
-            <a href="https://www.twitch.tv/megalodonvt" target="_blank" class="profile">
-                <img src="assets/images/clients/Megalodon.png" alt="" /><span class="name name2">megalodonvt</span>
-            </a>
-            <a href="https://www.twitch.tv/projektmelody" target="_blank" class="profile">
-                <img src="assets/images/clients/projektmelody.png" alt="" /><span class="name name2">ProjektMelody</span>
-            </a>
-            <a href="https://www.twitch.tv/quqco" target="_blank" class="profile">
-                <img src="assets/images/clients/quqco.png" alt="" /><span class="name name2">quqco</span>
-            </a>
-            <a href="https://www.twitch.tv/sprixer" target="_blank" class="profile">
-                <img src="assets/images/clients/sprixer.png" alt="" /><span class="name name2">Sprixer</span>
-            </a>
-            <a href="https://www.twitch.tv/yatosuki" target="_blank" class="profile">
-                <img src="assets/images/clients/yatosuki.png" alt="" /><span class="name name2">Yatosuki</span>
-            </a>
-            <a href="https://blerp.com/" target="_blank" class="profile">
-                <img src="assets/images/clients/blerp.png" alt="" /><span class="name name2">Blerp</span>
-            </a>
-            <a href="https://stemheads.org/" target="_blank" class="profile">
-                <img src="assets/images/clients/stemheads.png" alt="" /><span class="name name2">Stem
-                    Heads</span>
-            </a>
-        </div>
-    </div>-->
     <a href="#portfolio">
         <div class="border">
             <div class="border-text">Portfolio</div>
         </div>
     </a>
     <div id="portfolio">
+
+        <div class="container">
+            <a onclick="goToIndex(0)" class="profile">
+                <img src="assets/images/clients/filian.png" alt="" /><span class="name">filian</span>
+            </a>
+            <a onclick="goToIndex(1)" class="profile">
+                <img src="assets/images/clients/fallenshadow.png" alt="" /><span class="name name2">Fallen
+                    Shadow</span>
+            </a>
+            <a onclick="goToIndex(0)" class="profile">
+                <img src="assets/images/clients/lacari.png" alt="" /><span class="name name2">Lacari</span>
+            </a>
+            <a onclick="goToIndex(0)" class="profile">
+                <img src="assets/images/clients/Megalodon.png" alt="" /><span class="name name2">megalodonvt</span>
+            </a>
+            <a onclick="goToIndex(2)" class="profile">
+                <img src="assets/images/clients/projektmelody.png" alt="" /><span class="name name2">ProjektMelody</span>
+            </a>
+            <a onclick="goToIndex(3)" class="profile">
+                <img src="assets/images/clients/quqco.png" alt="" /><span class="name name2">quqco</span>
+            </a>
+            <a onclick="goToIndex(0)" class="profile">
+                <img src="assets/images/clients/sprixer.png" alt="" /><span class="name name2">Sprixer</span>
+            </a>
+            <a onclick="goToIndex(0)" class="profile">
+                <img src="assets/images/clients/yatosuki.png" alt="" /><span class="name name2">Yatosuki</span>
+            </a>
+            <a onclick="goToIndex(0)" class="profile">
+                <img src="assets/images/clients/blerp.png" alt="" /><span class="name name2">Blerp</span>
+            </a>
+            <a onclick="goToIndex(0)" class="profile">
+                <img src="assets/images/clients/stemheads.png" alt="" /><span class="name name2">Stem
+                    Heads</span>
+            </a>
+        </div>
         <div id="portfolio-content">
             <button class="arrow-right" type="button" onclick="handleRightClick()"><i class="fa-solid fa-arrow-right bounce-right"></i></button>
             <button class="arrow-left" type="button" onclick="handleLeftClick()"><i class="fa-solid fa-arrow-left bounce-left"></i></button>
@@ -303,41 +292,6 @@ if (isset($_SESSION['errors'])) {
             </section>
 
         </div>
-        <div class="container">
-            <a onclick="goToIndex(0)" class="profile">
-                <img src="assets/images/clients/filian.png" alt="" /><span class="name">filian</span>
-            </a>
-            <a onclick="goToIndex(1)" class="profile">
-                <img src="assets/images/clients/fallenshadow.png" alt="" /><span class="name name2">Fallen
-                    Shadow</span>
-            </a>
-            <a onclick="goToIndex(0)" class="profile">
-                <img src="assets/images/clients/lacari.png" alt="" /><span class="name name2">Lacari</span>
-            </a>
-            <a onclick="goToIndex(0)" class="profile">
-                <img src="assets/images/clients/Megalodon.png" alt="" /><span class="name name2">megalodonvt</span>
-            </a>
-            <a onclick="goToIndex(2)" class="profile">
-                <img src="assets/images/clients/projektmelody.png" alt="" /><span class="name name2">ProjektMelody</span>
-            </a>
-            <a onclick="goToIndex(3)" class="profile">
-                <img src="assets/images/clients/quqco.png" alt="" /><span class="name name2">quqco</span>
-            </a>
-            <a onclick="goToIndex(0)" class="profile">
-                <img src="assets/images/clients/sprixer.png" alt="" /><span class="name name2">Sprixer</span>
-            </a>
-            <a onclick="goToIndex(0)" class="profile">
-                <img src="assets/images/clients/yatosuki.png" alt="" /><span class="name name2">Yatosuki</span>
-            </a>
-            <a onclick="goToIndex(0)" class="profile">
-                <img src="assets/images/clients/blerp.png" alt="" /><span class="name name2">Blerp</span>
-            </a>
-            <a onclick="goToIndex(0)" class="profile">
-                <img src="assets/images/clients/stemheads.png" alt="" /><span class="name name2">Stem
-                    Heads</span>
-            </a>
-        </div>
-    </div>
     </div>
     <a href="#pricing">
         <div class="border">
