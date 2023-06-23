@@ -1,3 +1,12 @@
+:root {
+    --fs-300: clamp(1.13rem, calc(1.09rem + 0.18vw), 1.38rem);
+    --fs-400: clamp(1.35rem, calc(1.28rem + 0.35vw), 1.83rem);
+    --fs-500: clamp(1.62rem, calc(1.50rem + 0.59vw), 2.44rem);
+    --fs-600: clamp(1.94rem, calc(1.76rem + 0.94vw), 3.26rem);
+    --fs-700: clamp(2.33rem, calc(2.05rem + 1.43vw), 4.34rem);
+    --fs-800: clamp(2.80rem, calc(2.37rem + 2.13vw), 5.79rem);
+  }
+
 html {
     scroll-behavior: smooth;
     width: 100%;

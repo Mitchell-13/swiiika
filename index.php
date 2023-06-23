@@ -144,7 +144,7 @@ session_start();
             <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/yatosuki.png" alt="" /><span class="name name2">Yatosuki</span>
             </a>
-            <a onclick="goToIndex(0)" class="profile">
+            <a onclick="goToIndex(4)" class="profile">
                 <img src="assets/images/clients/blerp.png" alt="" /><span class="name name2">Blerp</span>
             </a>
             <a onclick="goToIndex(0)" class="profile">
@@ -290,7 +290,53 @@ session_start();
                 <div class="shorts-profile-picture"><img src="assets/images/clients/quqco.png" alt="quqco profile picture"></div>
 
             </section>
+            <section class="port-section" data-index="4" data-status="inactive">
+                <div class="video-dots">
+                    <div class="bdot dot-0 dot-active"></div>
+                    <div class="bdot dot-1"></div>
+                    <div class="bdot dot-2"></div>
+                </div>
+                <div class="vid-views">
+                    <div id="video-container">
+                        <div id="sections-container">
+                            <div class="top-bar showhide"><button class="arrow-up" onclick="bhandleUpClick()">
+                                    <i class="fa-solid fa-angle-up"></i></button>
+                            </div>
+                            <div class="bottom-bar showhide"><button class="arrow-down" onclick="bhandleDownClick()">
+                                    <i class="fa-solid fa-angle-down"></i></button>
+                            </div>
+                            <section class="scroll-video blerp-vids" bUD-data-index="0" data-status="active" data-views="12,500,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('blerp0')"></button>
+                                <video class="shorts" id="blerp0" preload="metadata" loop>
+                                    <source src="assets/videos/blerp/blerp3.mp4#t=0.001" type="video/mp4">
+                                </video>
+                            </section>
+                            <section class="scroll-video blerp-vids" bUD-data-index="1" data-status="inactive" data-views="1,100,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('blerp1')"></button>
+                                <video class="shorts" height="600" id="blerp1" preload="metadata" loop>
+                                    <source src="assets/videos/blerp/blerp2.mp4#t=0.001" type="video/mp4">
+                                </video>
+                            </section>
+                            <section class="scroll-video blerp-vids" bUD-data-index="2" data-status="inactive" data-views="400,000+ Views">
+                                <button id="playpause" class='play-button showhide' onclick="playPause('blerp2')"></button>
+                                <video class="shorts" height="600" id="blerp2" preload="metadata" loop>
+                                    <source src="assets/videos/blerp/blerp1.mp4" type="video/mp4">
+                                </video>
+                            </section>
 
+                        </div>
+                    </div>
+                    <span id="view-count">750,000+ Views</span>
+                </div>
+                <div id="shorts-desc">
+                    <p class="name">BLERP <br> <span class=views>173,350,000+ <br>Views</span></p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="shorts-profile-picture"><img src="assets/images/clients/blerp.png" alt="blerp profile picture"></div>
+
+            </section>
         </div>
     </div>
     <a href="#pricing">
@@ -416,6 +462,8 @@ session_start();
 <script src="js/dist/jarallax-video.js"></script>
 <script src="js/portfolio.js"></script>
 <script src="js/clients.js"></script>
+<script src="js/blerp.js"></script>
+<script src="js/filian.js"></script>
 
 <!-- Object Fit polyfill -->
 <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>

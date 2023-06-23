@@ -119,9 +119,8 @@ button.arrow-left {
     position: absolute;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: min(65ch,20% - 4rem);
+    padding-right: min(65ch,20% - 4rem);
     transition: transform 400ms ease;
 }
 
@@ -184,7 +183,7 @@ button.arrow-left {
     align-items: center;
 }
 
-.dot {
+.dot, .bdot {
     background-color: rgb(177, 177, 177);
     height: 15px;
     width: 15px;
@@ -240,28 +239,32 @@ button.arrow-left {
     flex-direction: column;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5rem;
     justify-content: flex-start;
     margin-left: 10px;
+    font-size: var(--fs-300);
 }
 
 #shorts-desc p.name {
-    font-size: 5rem;
+    font-size: var(--fs-800);
     display: inline-block;
-    line-height: 0.6;
+    line-height: 1;
     font-weight: bold;
-    margin-top: 10px;
+    display: inline-block;
 }
 
 .views {
     color: #38e4ae;
-    font-size: 2.2rem;
+    font-size: var(--fs-600);
+    display:inline-block;
+}
+#shorts-desc p{
+    display: inline-block;
 }
 #view-count{
     color:#38e4ae;
     font-family:'Roboto Condensed', sans-serif;
     font-size: 2.6rem;
-    font-weight: bold;
+    font-weight: bold;  
 }
 
 .shorts-profile-picture {
