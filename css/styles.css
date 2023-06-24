@@ -413,11 +413,11 @@ input[type="submit"] {
     padding-right: 10%;
     color: white;
     font-family: "roboto condensed", sans-serif;
-    font-size: 1.8vw;
+    font-size: var(--fs-400);
 }
 
 #aboutme-text h1 {
-    font-size: 3vw;
+    font-size: var(--fs-700);
 }
 
 .scroll-hidden {
