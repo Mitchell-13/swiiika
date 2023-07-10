@@ -336,17 +336,25 @@ input[type="submit"] {
 
 
 #aboutme {
+    /*
     background-color: black;
     background: linear-gradient(241deg, #118d59, #b14040);
     background-size: 400% 400%;
+    */
+    background-image: url(/assets/images/blurbg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
     height: 75vh;
     width: 100%;
 
     scroll-margin-top: 100px;
 
+    /*
     -webkit-animation: gradient-bg 10s ease infinite;
     -moz-animation: gradient-bg 10s ease infinite;
     animation: gradient-bg 10s ease infinite;
+    */
 }
 
 @-webkit-keyframes gradient-bg {
