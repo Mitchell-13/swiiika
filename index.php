@@ -465,7 +465,6 @@ session_start();
 <script src="js/dist/jarallax.js"></script>
 <script src="js/dist/jarallax-video.js"></script>
 <script src="js/portfolio.js"></script>
-<script src="js/clients.js"></script>
 <script src="js/blerp.js"></script>
 <script src="js/filian.js"></script>
 
