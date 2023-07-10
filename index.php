@@ -177,31 +177,31 @@ session_start();
                             </div>
                             <section class="scroll-video filian-vids" UD-data-index="0" data-status="active" data-views="750,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('filian0')"></button>
-                                <video class="shorts" id="filian0" preload="metadata" loop>
+                                <video class="shorts" id="filian0" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/filian/Filian_slices_natasha_V2.mp4#t=0.001" type="video/mp4">
                                 </video>
                             </section>
                             <section class="scroll-video filian-vids" UD-data-index="1" data-status="inactive" data-views="24,000,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('filian1')"></button>
-                                <video class="shorts" height="600" id="filian1" preload="metadata" loop>
+                                <video class="shorts" height="600" id="filian1" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/filian/Filian_Omegle_Reactions_2.mp4#t=0.001" type="video/mp4">
                                 </video>
                             </section>
                             <section class="scroll-video filian-vids" UD-data-index="2" data-status="inactive" data-views="8,200,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('filian2')"></button>
-                                <video class="shorts" height="600" id="filian2" preload="metadata" loop>
+                                <video class="shorts" height="600" id="filian2" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/filian/Filian_gets_splattered_by_miz_V2.mp4#t=0.001" type="video/mp4">
                                 </video>
                             </section>
                             <section class="scroll-video filian-vids" UD-data-index="3" data-status="inactive" data-views="10,000,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('filian3')"></button>
-                                <video class="shorts" height="600" id="filian3" preload="metadata" loop>
+                                <video class="shorts" height="600" id="filian3" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/filian/Filian_proves_shes_an_anime_girl_on_omegleV2.mp4#t=0.001" type="video/mp4">
                                 </video>
                             </section>
                             <section class="scroll-video filian-vids" UD-data-index="4" data-status="inactive" data-views="4,400,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('filian4')"></button>
-                                <video class="shorts" height="600" id="filian4" preload="metadata" loop>
+                                <video class="shorts" height="600" id="filian4" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/filian/Filian_finally_caught_her_tail.mp4#t=0.001" type="video/mp4">
                                 </video>
                             </section>
@@ -227,7 +227,7 @@ session_start();
                         <div id="sections-container">
                             <section class="scroll-video" UD-data-index="0" data-status="active" data-views="100,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('fallenshadow0')"></button>
-                                <video class="shorts" height="600" id="fallenshadow0" preload="metadata" loop>
+                                <video class="shorts" height="600" id="fallenshadow0" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/fallen shadow/Shadow_for_president.mp4#t=0.001" type="video/mp4">
                                 </video>
                             </section>
@@ -252,7 +252,7 @@ session_start();
                         <div id="sections-container">
                             <section class="scroll-video" UD-data-index="0" data-status="active" data-views="400,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('projektm0')"></button>
-                                <video class="shorts" height="600" id="projektm0" preload="metadata" loop>
+                                <video class="shorts" height="600" id="projektm0" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/projekt melody/Melody_gets_roasted_by_Charlie.mp4#t=0.001" type="video/mp4">
                                 </video>
                             </section>
@@ -277,7 +277,7 @@ session_start();
                         <div id="sections-container">
                             <section class="scroll-video" UD-data-index="0" data-status="active" data-views="400,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('quqco0')"></button>
-                                <video class="shorts" height="600" id="quqco0" preload="metadata" loop>
+                                <video class="shorts" height="600" id="quqco0" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/quqco/Quqcos_painting_fights_back.mp4" type="video/mp4">
                                 </video>
                             </section>
@@ -311,19 +311,19 @@ session_start();
                             </div>
                             <section class="scroll-video blerp-vids" bUD-data-index="0" data-status="active" data-views="12,500,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('blerp0')"></button>
-                                <video class="shorts" id="blerp0" preload="metadata" loop>
+                                <video class="shorts" id="blerp0" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/blerp/blerp3.mp4#t=0.001" type="video/mp4">
                                 </video>
                             </section>
                             <section class="scroll-video blerp-vids" bUD-data-index="1" data-status="inactive" data-views="1,100,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('blerp1')"></button>
-                                <video class="shorts" height="600" id="blerp1" preload="metadata" loop>
+                                <video class="shorts" height="600" id="blerp1" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/blerp/blerp2.mp4#t=0.001" type="video/mp4">
                                 </video>
                             </section>
                             <section class="scroll-video blerp-vids" bUD-data-index="2" data-status="inactive" data-views="400,000+ Views">
                                 <button id="playpause" class='play-button showhide' onclick="playPause('blerp2')"></button>
-                                <video class="shorts" height="600" id="blerp2" preload="metadata" loop>
+                                <video class="shorts" height="600" id="blerp2" poster="/assets/images/blurbg.png" loop>
                                     <source src="assets/videos/blerp/blerp1.mp4" type="video/mp4">
                                 </video>
                             </section>
