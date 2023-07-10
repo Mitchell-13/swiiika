@@ -296,9 +296,9 @@ session_start();
             </section>
             <section class="port-section" data-index="4" data-status="inactive">
                 <div class="video-dots">
-                    <div class="bdot dot-0 dot-active"></div>
-                    <div class="bdot dot-1"></div>
-                    <div class="bdot dot-2"></div>
+                    <div class="bdot dot-active"></div>
+                    <div class="bdot"></div>
+                    <div class="bdot"></div>
                 </div>
                 <div class="vid-views">
                     <div id="video-container">

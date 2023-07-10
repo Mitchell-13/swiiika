@@ -195,6 +195,7 @@ button.arrow-left {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 45vh;
 }
 
 .dot,
