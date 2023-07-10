@@ -48,7 +48,7 @@ session_start();
     }
     ?>
 
-    <div id="test">
+    <div id="header">
         <div id="menu">
             <div id="menu-bar" onclick="menuOnClick()">
                 <div id="bar1" class="bar"></div>
@@ -150,6 +150,9 @@ session_start();
             <a onclick="goToIndex(0)" class="profile">
                 <img src="assets/images/clients/stemheads.png" alt="" /><span class="name name2">Stem
                     Heads</span>
+            </a>
+            <a onclick="goToIndex(0)" class="profile">
+                <img src="assets/images/clients/gamestop.png" alt="" /><span class="name name2">Gamestop</span>
             </a>
         </div>
         <div id="portfolio-content">

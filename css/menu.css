@@ -4,7 +4,7 @@
 @media screen and (max-width: 760px) {
 
 
-    #test {
+    #header {
         background-color: black;
         height: 100px;
         width: 100%;
@@ -20,7 +20,7 @@
 
 }
 
-#test {
+#header {
     position: sticky;
     z-index: 10;
     top: 0;
