@@ -94,7 +94,7 @@ session_start();
         <div class="scroll-hidden" id="aboutme-content">
             <img src="/assets/images/Layer 0.png" alt="">
             <div id="aboutme-text">
-                <p>Hello! I'm,
+                <p>Hello! I'm,</p>
                 <h1>Connor Johnson</h1>
 
                 A content editor and drone videographer with <strong>3+ years
@@ -106,7 +106,7 @@ session_start();
                 content that captures my clients' vision and engages their audience. Check out my portfolio to
                 see some
                 of my past work, and <strong>let's collaborate to take your video content to the next
-                    level.</strong></p>
+                    level.</strong>
             </div>
         </div>
 
