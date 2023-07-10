@@ -1,0 +1,152 @@
+
+@media screen and (max-width: 760px) {
+    #aboutme-text {
+        align-self: center;
+        padding-left: 20px;
+        padding-right: 10%;
+        color: white;
+        font-family: "roboto condensed", sans-serif;
+        font-size: var(--fs-200);
+    }
+    
+    #aboutme-text h1 {
+        font-size: var(--fs-300);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #aboutme-content {
+        position:relative;
+    }
+    #aboutme-text {
+        position: absolute;
+        padding:20px;
+        border-radius: 20px;
+        background-color: rgba(236, 236, 236, 0.466);
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:95%;
+        color:black !important;
+    }
+    #aboutme-text {
+        align-self: center;
+        padding-left: 20px;
+        padding-right: 10%;
+        color: white;
+        font-family: "roboto condensed", sans-serif;
+        font-size: var(--fs-300);
+    }
+    
+    #aboutme-text h1 {
+        font-size: var(--fs-600);
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+
+    #aboutme-text {
+        align-self: center;
+        padding-left: 20px;
+        padding-right: 10%;
+        color: white;
+        font-family: "roboto condensed", sans-serif;
+        font-size: var(--fs-400);
+    }
+    
+    #aboutme-text h1 {
+        font-size: var(--fs-700);
+    }
+    
+}
+
+
+
+
+#aboutme {
+    /*
+    background-color: black;
+    background: linear-gradient(241deg, #118d59, #b14040);
+    background-size: 400% 400%;
+    */
+    background-image: url(/assets/images/blurbg.png);
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+
+    scroll-margin-top: 100px;
+
+    /*
+    -webkit-animation: gradient-bg 10s ease infinite;
+    -moz-animation: gradient-bg 10s ease infinite;
+    animation: gradient-bg 10s ease infinite;
+    */
+}
+
+@-webkit-keyframes gradient-bg {
+    0% {
+        background-position: 93% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@-moz-keyframes gradient-bg {
+    0% {
+        background-position: 93% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@keyframes gradient-bg {
+    0% {
+        background-position: 93% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+#aboutme-content {
+    padding-left: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transition-duration: 1.5s;
+}
+
+#aboutme-content img {
+    height: 65vh;
+    align-self: flex-end;
+
+}
+
+.scroll-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.scroll-visible {
+    opacity: 1;
+}

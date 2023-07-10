@@ -18,6 +18,7 @@ session_start();
     <link href="css/pricing.css" rel="stylesheet">
     <link href="css/portfolio.css" rel="stylesheet">
     <link href="css/head.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/para.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="js/menu.js"></script>

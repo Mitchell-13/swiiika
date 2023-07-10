@@ -4,10 +4,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         justify-items: center;
-    }
-
-    .container a:last-child {
-        grid-column: 2;
+        padding: 10%;
     }
 
     #clients {

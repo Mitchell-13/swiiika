@@ -16,10 +16,28 @@
         display: none;
     }
 
+    #portfolio #portfolio-content,
+    #portfolio i {
+        display: none;
+    }
+
+    .container a:nth-last-child(2) {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+
+    .container a:nth-last-child(1) {
+        grid-column: 2 / span 2;
+        grid-row: 4;
+    }
+
+
 }
 
 @media screen and (min-width: 760px) {
-
+    #portfolio {
+        padding-top: 60px;
+    }
 
     #portfolio-buttons {
         position: relative;
@@ -56,7 +74,6 @@
     height: fit-content;
     scroll-margin-top: 100px;
     background-color: #0e0e0e;
-    padding-top: 60px;
 }
 
 #portfolio-content {
@@ -116,8 +133,8 @@ button.arrow-left {
     position: absolute;
     display: flex;
     flex-direction: row;
-    padding-left: min(65ch,20% - 4rem);
-    padding-right: min(65ch,20% - 4rem);
+    padding-left: min(65ch, 20% - 4rem);
+    padding-right: min(65ch, 20% - 4rem);
     transition: transform 400ms ease;
 }
 
@@ -180,7 +197,8 @@ button.arrow-left {
     align-items: center;
 }
 
-.dot, .bdot {
+.dot,
+.bdot {
     background-color: rgb(177, 177, 177);
     height: 15px;
     width: 15px;
@@ -191,19 +209,22 @@ button.arrow-left {
 .dot-active {
     background-color: #38e4ae;
 }
-.vid-views{
+
+.vid-views {
     display: flex;
     flex-direction: column;
     height: fit-content;
     align-items: center;
 }
-#video-container{
+
+#video-container {
     position: relative;
     height: 45vh;
     width: 25.31vh;
     overflow: hidden;
 }
-#sections-container{
+
+#sections-container {
     position: relative;
     z-index: 2;
     display: flex;
@@ -215,7 +236,7 @@ button.arrow-left {
     background-color: #000000;
 }
 
-.scroll-video{
+.scroll-video {
     position: absolute;
     width: fit-content;
     height: inherit;
@@ -252,16 +273,18 @@ button.arrow-left {
 .views {
     color: #38e4ae;
     font-size: var(--fs-600);
-    display:inline-block;
-}
-#shorts-desc p{
     display: inline-block;
 }
-#view-count{
-    color:#38e4ae;
-    font-family:'Roboto Condensed', sans-serif;
+
+#shorts-desc p {
+    display: inline-block;
+}
+
+#view-count {
+    color: #38e4ae;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 2.6rem;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 .shorts-profile-picture {

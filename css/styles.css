@@ -1,4 +1,6 @@
 :root {
+    --fs-100: clamp(0.77rem, calc(0.78rem + -0.01vw), 0.78rem);
+    --fs-200: clamp(0.94rem, calc(0.92rem + 0.07vw), 1.03rem);
     --fs-300: clamp(1.13rem, calc(1.09rem + 0.18vw), 1.38rem);
     --fs-400: clamp(1.35rem, calc(1.28rem + 0.35vw), 1.83rem);
     --fs-500: clamp(1.62rem, calc(1.50rem + 0.59vw), 2.44rem);
@@ -12,6 +14,7 @@ html {
     width: 100%;
     background-color: black;
     font-family: "roboto condensed", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -211,7 +214,7 @@ footer p {
 #contact-popout {
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 80%;
     z-index: 20;
     background-color: rgb(56, 228, 174);
     writing-mode: vertical-lr;
@@ -329,110 +332,3 @@ input[type="submit"] {
 
 
 
-
-
-
-
-
-
-#aboutme {
-    /*
-    background-color: black;
-    background: linear-gradient(241deg, #118d59, #b14040);
-    background-size: 400% 400%;
-    */
-    background-image: url(/assets/images/blurbg.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-    height: 75vh;
-    width: 100%;
-
-    scroll-margin-top: 100px;
-
-    /*
-    -webkit-animation: gradient-bg 10s ease infinite;
-    -moz-animation: gradient-bg 10s ease infinite;
-    animation: gradient-bg 10s ease infinite;
-    */
-}
-
-@-webkit-keyframes gradient-bg {
-    0% {
-        background-position: 93% 0%
-    }
-
-    50% {
-        background-position: 0% 100%
-    }
-
-    100% {
-        background-position: 93% 0%
-    }
-}
-
-@-moz-keyframes gradient-bg {
-    0% {
-        background-position: 93% 0%
-    }
-
-    50% {
-        background-position: 0% 100%
-    }
-
-    100% {
-        background-position: 93% 0%
-    }
-}
-
-@keyframes gradient-bg {
-    0% {
-        background-position: 93% 0%
-    }
-
-    50% {
-        background-position: 0% 100%
-    }
-
-    100% {
-        background-position: 93% 0%
-    }
-}
-
-#aboutme-content {
-    padding-left: 5%;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    transition-duration: 1.5s;
-}
-
-#aboutme-content img {
-    height: 65vh;
-    align-self: flex-end;
-
-}
-
-#aboutme-text {
-    align-self: center;
-    padding-left: 20px;
-    padding-right: 10%;
-    color: white;
-    font-family: "roboto condensed", sans-serif;
-    font-size: var(--fs-400);
-}
-
-#aboutme-text h1 {
-    font-size: var(--fs-700);
-}
-
-.scroll-hidden {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.scroll-visible {
-    opacity: 1;
-}
